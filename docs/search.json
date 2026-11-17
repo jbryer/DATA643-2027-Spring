@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "textbooks.html",
+    "href": "textbooks.html",
+    "title": "Textbooks",
+    "section": "",
+    "text": "TODO: Add textbooks\n\n\n \nWickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2025). R for Data Science (2nd Ed).\n\nThis is an open source textbook that can be accessed on the web, or a printed copy can be ordered from Amazon.",
+    "crumbs": [
+      "Course information",
+      "Textbooks"
+    ]
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "R and RStudio\n\nWe will make use of R, an open source statistics program and language. Be sure to install R and RStudio on your own computers within the first few days of the class.\n\nR - download for Windows, Mac, or Linux.\nRStudio - Download Windows, Mac, or Linux versions from here\n\nIf using Windows, you also need to download RTools.\n\n\nLaTeX\n\nLaTeX is a typesetting language for preparing documents. Documents are written in plain text files. Formatting the document is done using specific markup. If you have used HTML, the framework is similar however instead of using &lt;TAG&gt;&lt;/TAG&gt; syntax, LaTeX uses \\TAG{} format. We will primarily use Markdown, and its extension R Markdown for preparing documents in this class. However, when preparing PDF documents, the Markdown will first be converted to LaTeX before creating the PDF file. As such, a LaTeX converter is necessary. There are LaTeX installers for Windows (MiKTeX) and Mac (BasicTeX). Alternatively, the tinytex R package provides an easier way of installing LaTeX directly from within R:\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n\n\n\nR Packages\n\nOnce everything is installed, execute the following command in RStudio to install the packages we will use for this class (you can copy-and-paste):\n\ninstall.packages(c('openintro','devtools','tidyverse', 'ggplot2',\n                   'psych','reshape2','knitr','markdown','shiny','R.rsp',\n                   'fivethirtyeight'))\nremotes::install_github(\"jbryer/DATA606\")\nremotes::install_github(\"jbryer/VisualStats\")\n\n\n\nSource Control\nAll course materials will be made available on Github which provides an implementation of the git open source version control system. RStudio supports git directly. For more information, Jenny Bryan’s Happy Git and Github for the useR is a free online book covering the important features of source control for R users.",
+    "crumbs": [
+      "Course information",
+      "Software"
+    ]
+  },
+  {
+    "objectID": "project.html",
+    "href": "project.html",
+    "title": "Data Project",
+    "section": "",
+    "text": "Projects can be completed individually or as pairs. You will select an observational dataset of your choice as long as their is a variable that can be considered a treatment condition. You will work with this dataset throughout the semester applying the different statistical techniques. It is suggested that you create a Github repository and use Quarto’s website feature to build a portfolio of your work. You will be graded on the following components:",
+    "crumbs": [
+      "Course information",
+      "Project"
+    ]
+  },
+  {
+    "objectID": "project.html#grading-rubric",
+    "href": "project.html#grading-rubric",
+    "title": "Data Project",
+    "section": "Grading Rubric",
+    "text": "Grading Rubric\n\n\n\nDomain\nAccomplished\nProficient\nNeeds Improvement\n\n\n\n\nAbstract\nAbstract is less than 300 words, free of grammatical errors, summarizes the analysis conducted, has a conclusion and implicaitons\n\n\n\n\nIntroduction\nThe research question is clearly stated, can be answered by the data, and the context of the problem clearly explained.\nThe research question is unclear and/or not supported by the data.\nResearch question is ambiguous, unclear, or not stated.\n\n\nData Display\nIncludes appropriate, well-labeled, accurate displays (graphs and tables) of the data.\nIncludes appropriate, accurate displays of the data.\nIncludes appropriate but no accurate displays of the data.\n\n\nData Analysis\nThe appropriate statistical test(s) was used for the data and interpretation was clear.\nThe appropriate statistical test(s) was used but interpretation was not fully clear or well articulated.\nThe incorrect statistical test was used an/or not justified for the data as presented.\n\n\nConclusion\nConclusion includes a clear answer to the statistical question that is consistent with the data analysis and the method of data collection.\nConclusion includes an answer to the statistical question that is consistent with the data but not with the data collection method.\nConclusion does not include an answer to the statistical question that is consistent with the data analysis.\n\n\nOverall Presentation\nAttractive, well-organized, well-written presentation\nPresentation has two of the three qualities: attractive, well-organized, well-written.\nPresentation is not attractive, organized, or written. There are numerous errors throughout.",
+    "crumbs": [
+      "Course information",
+      "Project"
+    ]
+  },
+  {
+    "objectID": "modules/00-Intro_to_Course.html",
+    "href": "modules/00-Intro_to_Course.html",
+    "title": "Introduction to the Course",
+    "section": "",
+    "text": "An Introduction to Statistical Learning chapter 1.",
+    "crumbs": [
+      "Topics",
+      "Introduction to the course"
+    ]
+  },
+  {
+    "objectID": "modules/00-Intro_to_Course.html#readings",
+    "href": "modules/00-Intro_to_Course.html#readings",
+    "title": "Introduction to the Course",
+    "section": "",
+    "text": "An Introduction to Statistical Learning chapter 1.",
+    "crumbs": [
+      "Topics",
+      "Introduction to the course"
+    ]
+  },
+  {
+    "objectID": "modules/00-Intro_to_Course.html#assignments",
+    "href": "modules/00-Intro_to_Course.html#assignments",
+    "title": "Introduction to the Course",
+    "section": "Assignments",
+    "text": "Assignments\n\nComplete the formative assessment.\nIntroduce yourself on Slack.\nMake sure R and RStudio are up-to-date. See the software page for details.",
+    "crumbs": [
+      "Topics",
+      "Introduction to the course"
+    ]
+  },
+  {
+    "objectID": "modules/00-Intro_to_Course.html#supplemental-videos",
+    "href": "modules/00-Intro_to_Course.html#supplemental-videos",
+    "title": "Introduction to the Course",
+    "section": "Supplemental Videos",
+    "text": "Supplemental Videos",
+    "crumbs": [
+      "Topics",
+      "Introduction to the course"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DATA643 Causality",
+    "section": "",
+    "text": "Be sure to check this page regularly for updates. In addition to periodic updates about the course, slides and recordings of the weekly meetups will be posted here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to DATA643!\n\n\nImportant information on how to get started with this course. Please read this post carefully.\n\n\n\n\n\nJan 1, 2027\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Announcements"
+    ]
+  },
+  {
+    "objectID": "instructor.html",
+    "href": "instructor.html",
+    "title": "Instructor",
+    "section": "",
+    "text": "Jason Bryer, Ph.D.\nEmail: jason.bryer@cuny.edu\nDr. Jason Bryer is currently an Associate Professor and Director in the Data Science and Information Systems department at the City University of New York. He is currently the Principal Investigator of the FIPSE ($3 million #P116F150077) and IES funded ($3.8 million R305A210269) Diagnostic Assessment and Achievement of College Skills (DAACS), which is a suite of technological and social supports designed to optimize student learning. Dr. Bryer’s other research interests include quasi-experimental designs with an emphasis on propensity score analysis, data systems to support formative assessment, and the use of open source software for conducting reproducible research. He is the author of over a dozen R packages, including three related to conducting propensity score analyses.\n\nContact\nOffice Hours (Zoom is preferred): By appointment. You’re encouraged to schedule an appointment and I have time nearly everyday. You are also encouraged to ask us questions on Slack. If you wish to ask a question in private, you can email me directly.\nFor the most part, you can expect me to respond to questions by email within 24 hours. If you do not hear back from me within 48 hours of sending an email, please resend your message. I will be checking in on the course regularly, just about every day and likely several times each day. Please do not hesitate to ask if you have questions or concerns.",
+    "crumbs": [
+      "Course information",
+      "Instructor"
+    ]
+  },
+  {
+    "objectID": "posts/00-Welcome.html",
+    "href": "posts/00-Welcome.html",
+    "title": "Welcome to DATA643!",
+    "section": "",
+    "text": "Welcome to DATA643! Couple of important notes as you get started:\n\nJoin the Slack channel by clicking here (or use your @sps.cuny.edu email address). This will be our primary mode of communication.\nFor private communications, you can either send private Slack messages or email me at jason.bryer@cuny.edu.\nOur Meetups will be on TBD from . I expect everyone to attend or watch the Meetups. Important information will be shared during the meetups that will not be available in any other format.\n\nI am looking forward to getting to know everyone and a fantastic semester! Good luck!"
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Schedule",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses.\nWe will have meetups on Monday evenings at 7:00pm. Click here to join the meetup.\nMeetups will be recorded and made available the next day on the course website. Although attending live is not strictly required, I expect everyone to watch the lectures during the week. I use the class meetups to convey important information and announcements. Very often I will cover some topics not in the textbook. Students who attend the meetups tend to do well on the assignments.\n\n\n\n\nWeek\nDate\nStartTime\nTopic\nPrepare\nLab\nLink\nVideo\nSlides\n\n\n\n\n1\n2027-02-01\n\nIntroduction to Causality\n\n\n\n\n\n\n\n2\n2027-02-08\n\nDesigning Studies for Causaility\n\n\n\n\n\n\n\n3\n2027-02-15\n\nPropensity Score Analysis\n\n\n\n\n\n\n\n4\n2027-02-22\n\nPropensity Score Matching\n\n\n\n\n\n\n\n5\n2027-03-01\n\nSensitivity Analysis\n\n\n\n\n\n\n\n6\n2027-03-08\n\nExtensions of PSA\n\n\n\n\n\n\n\n7\n2027-03-15\n\nCausal Diagrams (DAGs)\n\n\n\n\n\n\n\n8\n2027-03-22\n\nStructural Equation Modeling\n\n\n\n\n\n\n\n9\n2027-03-29\n\nCausal Machine Learning\n\n\n\n\n\n\n\n10\n2027-04-05\n\nDifference-in-differences\n\n\n\n\n\n\n\n11\n2027-04-12\n\nInstrumental Variables\n\n\n\n\n\n\n\n12\n2027-04-19\n\nRegression Discontinuity\n\n\n\n\n\n\n\n\n2027-04-26\n\nSPRING BREAK - NO CLASS\n\n\n\n\n\n\n\n13\n2027-05-03\n\nPresentations\n\n\n\n\n\n\n\n14\n2027-05-10\n\nPresentations - Final Meetup",
+    "crumbs": [
+      "Schedule"
+    ]
+  }
+]
