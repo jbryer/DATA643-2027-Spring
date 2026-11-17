@@ -1,0 +1,130 @@
+project:
+  type: website
+  output-dir: "docs/"
+  render:
+  - "*.qmd"
+  - "schedule.qmd"
+  - "!resources/"
+  - "!common/"
+  - "!slides/"
+  - "!assignments/"
+  - "!private/"
+  - "!data/"
+  pre-render:
+    - "touch schedule.qmd"
+    - build_pdf_slides.R
+    - build_posts.R
+  post-render:
+    - "cp -rf resources/ docs/resources/"
+    - "cp -rf assignments/ docs/assignments/"
+    - "cp -rf slides/ docs/slides/"
+
+website:
+  announcement:
+   content: "Please join the [#data643-spring2027-causality](https://cuny-msds.slack.com/archives/C0CHV0RU6CX) Slack channel."
+   type: primary
+   icon: slack
+  #   content: "[Click here]() to the join the Slack channel."
+  #   # position: below-navbar # above-navbar or below-navbar
+  #   icon: slack #info-circle # https://icons.getbootstrap.com
+  #   dismissable: false
+  #   type: primary # primary, secondary, success, danger, warning, info, light, dark
+
+  page-navigation: true
+  title: "DATA643 Causality"
+  description: "CUNY School of Professional Studies"
+  # TODO: Update for each semester
+  site-url: "https://spring2027.data643.net"
+
+# TODO: Update for each semester
+  repo-url: https://jbryer.github.io/DATA643-2027-Spring/
+  repo-subdir: website
+  repo-branch: master
+  repo-actions: [edit, issue]
+
+  open-graph: true
+
+  page-footer:
+    # right: ""
+    # left: ""
+    background: "#325A89"
+
+  sidebar:
+    background: "#eeeeee"
+    logo: "course_logo.png" # TODO: Replace with course logo
+    pinned: true
+    align: center
+    # List of available icons: https://icons.getbootstrap.com
+    tools:
+      - icon: calendar-check
+        href: schedule.qmd
+        text: "Schedule"
+      - icon: book
+        href: textbooks.qmd
+        text: "Textbooks"
+# TODO: Update for each semester
+      - icon: github
+        href: https://github.com/jbryer/DATA643-2027-Spring
+        text: "Github"
+        target: _blank
+# TODO: Update for each semester
+        # - icon: slack
+      - icon: link-45deg
+        text: "CUNY"
+        menu:
+          - text: Brightspace LMS
+            url: https://brightspace.cuny.edu
+            target: _blank
+          - text: MSDS Program Page
+            url: https://sps.cuny.edu/academics/graduate/master-science-data-science-ms
+            target: _blank
+          - text: CUNYfirst
+            url: https://cunyfirst.cuny.edu
+            target: _blank
+# TODO: Update for new instructor
+      - icon: envelope
+        text: "Email"
+        url: mailto:jason.bryer@cuny.edu?subject=DATA643
+
+    style: "docked"
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: "Announcements"
+      - href: schedule.qmd
+        text: "Schedule"
+      - section: "Course information"
+        contents:
+          - href: syllabus.qmd
+            text: "Syllabus"
+          - href: instructor.qmd
+            text: "Instructor"
+          - href: project.qmd
+            text: "Project"
+          - href: software.qmd
+            text: "Software"
+          - href: textbooks.qmd
+            text: "Textbooks"
+      - section: "Topics"
+        contents:
+          - href: modules/00-Intro_to_Course.qmd
+            text: "Introduction to the course"
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss]
+      dark: [cosmo, theme-dark.scss]
+    mainfont: "Atkinson Hyperlegible"
+    code-copy: true
+    code-overflow: wrap
+    toc: false
+    # include-in-header:
+    #   text: |
+    #     <link href="/fullcalendar-lib/main.css" rel="stylesheet" />
+    #     <script type="text/javascript" src="/fullcalendar-lib/main.js"></script>
+
+# freeze: auto # Removing because this doesn't seem to work with "touch filename"
+
+editor: source

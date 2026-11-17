@@ -1,0 +1,18 @@
+---
+title: "Textbooks"
+---
+
+
+TODO: Add textbooks
+
+<br />
+
+<!-- R for Data Science -->
+
+<a href="https://r4ds.hadley.nz"><img src='/images/r4ds.jpg' alt='R for Data Science' align='left' style="height:125px; padding-left:10px; padding-right:10px;"/></a>
+</a>
+
+Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2025). *R for Data Science (2nd Ed).*
+
+> This is an open source textbook that [can be accessed on the web](https://r4ds.hadley.nz), or a printed copy can be ordered from [Amazon](https://www.amazon.com/Data-Science-Transform-Visualize-Model/dp/1492097403/ref=sr_1_1?crid=M79ETHG57G1L&dib=eyJ2IjoiMSJ9.Z1c-Zpi4mNudjpLRyuLhdiV-vmTQxsTksawK5qZqUgg7eerNQQSJqvZp3BkffxdM1ox_XNzTabFcY05ICFTkf9ncIVj_IEWz1rhWS2gil8nY-LPqz9c-dloObLA3FnLDg5WOQe992bNxxijiuIFnKK0Ey5QraCvJOh0cXEAbtlptBwb7o9NXvcvzUuFLoQAPthbWbSUmBMcqVkX2GsQLYhi_T3gUNKggad08D7zUCfs.VwIG-MY-f-HOH75xjof58egaEoy8hhNzLAZxBsV1lT4&dib_tag=se&keywords=r+for+data+science&qid=1741917409&sprefix=r+for+dat%2Caps%2C138&sr=8-1).
+

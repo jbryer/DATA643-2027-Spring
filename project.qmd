@@ -1,0 +1,24 @@
+---
+title: "Data Project"
+---
+
+Projects can be completed individually or as pairs. You will select an observational dataset of your choice as long as their is a variable that can be considered a treatment condition. You will work with this dataset throughout the semester applying the different statistical techniques. It is suggested that you create a Github repository and use Quarto's website feature to build a portfolio of your work. You will be graded on the following components:
+
+* Analysis Log (10%) - This is a document that outlines the analysis conducted in R or Python. Feedback will be provided after each major topic.
+
+* Presentation (15%) - A 10 to 15 minute presentation conducted at the end of the semester that summarizes your findings.
+
+* Paper (15%) - Research paper that follows the standard academic paper format (e.g. introduction, literature review, method, results, discussion).
+
+
+## Grading Rubric
+
+```{r, echo=FALSE, results='asis'}
+options(knitr.kable.NA = '')
+rubric <- readxl::read_excel('assignments/Data_Project_Rubric.xlsx')
+rubric |>
+	knitr::kable(format = 'html',
+				 escape = FALSE)
+```
+
+
