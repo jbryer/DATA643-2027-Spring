@@ -34,11 +34,7 @@ tinytex::install_tinytex()
 Once everything is installed, execute the following command in RStudio to install the packages we will use for this class (you can copy-and-paste):
 
 ```{r, eval=FALSE}
-install.packages(c('openintro','devtools','tidyverse', 'ggplot2',
-                   'psych','reshape2','knitr','markdown','shiny','R.rsp',
-                   'fivethirtyeight'))
-remotes::install_github("jbryer/DATA606")
-remotes::install_github("jbryer/VisualStats")
+source('')
 ```
 
 

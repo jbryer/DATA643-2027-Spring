@@ -1,0 +1,45 @@
+---
+title: "Dataset"
+---
+
+This page lists some of the datasets we will use in this course. You can add datasets you find to this page by clicking "Edit this page" at the bottom and submitting a pull request.
+
+## National Medical Expenditure Study
+
+Results from the 1987 National Medical Expenditure Study
+
+```{r, eval=FALSE}
+data(nmes, package = 'TriMatch')
+```
+
+## Effects of tutoring services on course grades
+
+Results from a study examining the effects of tutoring services on course grades. This is the dataset that inspired the [`TriMatch`](https://github.com/jbryer/TriMatch) package for making matched triplets (i.e. three groups, two treatments, one control).
+
+```{r, eval=FALSE}
+data(tutoring, package = 'TriMatch')
+```
+
+## The Trends in International Mathematics and Science Study (TIMSS) 
+
+
+
+```{r, eval=FALSE}
+EdSurvey::downloadTIMSS(root = "data/", years = c(2019), cache = TRUE, verbose = TRUE)
+timss <- EdSurvey::readTIMSS(path = 'data/', countries = 'USA', gradeLvl = '8')
+```
+
+## Programme of International Student Assessment (PISA)
+
+```{r, eval=FALSE}
+
+```
+
+## Effects of bed nets
+
+See https://evalsp21.classes.andrewheiss.com/example/cace/ for more information on this dataset.
+
+```{r, eval=FALSE}
+bed_nets <- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv')
+bed_nets_time_machine <- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv')
+```

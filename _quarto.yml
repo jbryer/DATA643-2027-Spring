@@ -108,8 +108,8 @@ website:
             text: "Textbooks"
       - section: "Topics"
         contents:
-          - href: modules/00-Intro_to_Course.qmd
-            text: "Introduction to the course"
+          - href: modules/00-Intro_to_Causality.qmd
+            text: "Introduction to Causality"
 
 format:
   html:

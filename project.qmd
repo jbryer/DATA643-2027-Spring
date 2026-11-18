@@ -10,6 +10,7 @@ Projects can be completed individually or as pairs. You will select an observati
 
 * Paper (15%) - Research paper that follows the standard academic paper format (e.g. introduction, literature review, method, results, discussion).
 
+[Click here](`r project_signup`) to sign-up for a time to give your presentation.
 
 ## Grading Rubric
 

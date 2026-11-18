@@ -8,9 +8,9 @@ description: "Important information on how to get started with this course. Plea
 
 ```{r, eval=TRUE, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
 source('../config.R')
-meetup_image(out_file = '00-welcome.png',
-			 title = 'Welcome to DATA643 Causality!',
-			 date = ' ')
+# meetup_image(out_file = '00-welcome.png',
+# 			 title = 'Welcome to DATA643 Causality!',
+# 			 date = ' ')
 ```
 
 

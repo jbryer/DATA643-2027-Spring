@@ -44,47 +44,25 @@
     ]
   },
   {
-    "objectID": "modules/00-Intro_to_Course.html",
-    "href": "modules/00-Intro_to_Course.html",
-    "title": "Introduction to the Course",
-    "section": "",
-    "text": "An Introduction to Statistical Learning chapter 1.",
-    "crumbs": [
-      "Topics",
-      "Introduction to the course"
-    ]
-  },
-  {
-    "objectID": "modules/00-Intro_to_Course.html#readings",
-    "href": "modules/00-Intro_to_Course.html#readings",
-    "title": "Introduction to the Course",
-    "section": "",
-    "text": "An Introduction to Statistical Learning chapter 1.",
-    "crumbs": [
-      "Topics",
-      "Introduction to the course"
-    ]
-  },
-  {
-    "objectID": "modules/00-Intro_to_Course.html#assignments",
-    "href": "modules/00-Intro_to_Course.html#assignments",
-    "title": "Introduction to the Course",
+    "objectID": "modules/00-Intro_to_Causality.html#assignments",
+    "href": "modules/00-Intro_to_Causality.html#assignments",
+    "title": "Introduction to Causality",
     "section": "Assignments",
-    "text": "Assignments\n\nComplete the formative assessment.\nIntroduce yourself on Slack.\nMake sure R and RStudio are up-to-date. See the software page for details.",
+    "text": "Assignments",
     "crumbs": [
       "Topics",
-      "Introduction to the course"
+      "Introduction to Causality"
     ]
   },
   {
-    "objectID": "modules/00-Intro_to_Course.html#supplemental-videos",
-    "href": "modules/00-Intro_to_Course.html#supplemental-videos",
-    "title": "Introduction to the Course",
+    "objectID": "modules/00-Intro_to_Causality.html#supplemental-videos",
+    "href": "modules/00-Intro_to_Causality.html#supplemental-videos",
+    "title": "Introduction to Causality",
     "section": "Supplemental Videos",
     "text": "Supplemental Videos",
     "crumbs": [
       "Topics",
-      "Introduction to the course"
+      "Introduction to Causality"
     ]
   },
   {
