@@ -3,7 +3,7 @@ year <- 2027
 semester <- 'Spring'
 course <- 'DATA643'
 class_day <- 'TBD'
-class_time <- ''
+class_time <- 'TBD'
 instructor <- 'Jason Bryer, Ph.D.'
 instructor_email <- 'jason.bryer@cuny.edu'
 description <- paste0(course, ' Causality ', semester, ' ', year)

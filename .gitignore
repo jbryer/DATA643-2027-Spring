@@ -9,5 +9,6 @@
 **/*.quarto_ipynb
 /private/
 /data/TIMSS/
+/data/PISA/
 /slides/
 /docs/slides/

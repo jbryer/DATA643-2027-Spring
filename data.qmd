@@ -36,9 +36,32 @@ timss <- EdSurvey::readTIMSS(path = 'data/TIMSS/2019/', countries = 'USA', grade
 [PISA](https://www.oecd.org/en/about/programmes/pisa.html) is the OECD's Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.
 
 ```{r, eval=FALSE}
-downloadPISA(years = 2022, database = "INT", root = "data/")
-pisa <- readPISA(path = "data/PISA/2022", countries = "USA")
+EdSurvey::downloadPISA(years = 2018, database = "INT", root = "data/")
+pisa <- EdSurvey::readPISA(path = "data/PISA/2018", countries = "USA")
 ```
+
+The `EdSurvey` package only goes to 2018. Data for [2022](https://webfs.oecd.org/pisa2022/index.html#section1) and [2025](https://webfs.oecd.org/pisa2022/index.html#section0) are available on the [OEC website](https://www.oecd.org/en/about/programmes/pisa.html).
+
+```{r, eval=FALSE}
+path <- 'data/PISA/'
+pisa_files <- c(
+	# 2025
+	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_SCH_PUF.zip',
+	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_STU_PUF.zip',
+	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_TCH_PUF.zip',
+	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PUF.zip',
+	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PROCESS_PUF.zip',
+	# 2022
+	'https://webfs.oecd.org/pisa2018/SPSS_STU_QQQ.zip',
+	'https://webfs.oecd.org/pisa2018/SPSS_SCH_QQQ.zip',
+	'https://webfs.oecd.org/pisa2018/SPSS_TCH_QQQ.zip',
+	'https://webfs.oecd.org/pisa2018/SPSS_STU_COG.zip',
+	'https://webfs.oecd.org/pisa2018/SPSS_STU_TIM.zip',
+	'https://webfs.oecd.org/pisa2018/SPSS_STU_FLT.zip'
+)
+
+```
+
 
 ## Effects of bed nets
 

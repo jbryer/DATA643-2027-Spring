@@ -513,16 +513,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="programme-of-international-student-assessment-pisa">Programme of International Student Assessment (PISA)</h2>
 <p><a href="https://www.oecd.org/en/about/programmes/pisa.html">PISA</a> is the OECD’s Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">downloadPISA</span>(<span class="at">years =</span> <span class="dv">2022</span>, <span class="at">database =</span> <span class="st">"INT"</span>, <span class="at">root =</span> <span class="st">"data/"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>pisa <span class="ot">&lt;-</span> <span class="fu">readPISA</span>(<span class="at">path =</span> <span class="st">"data/PISA/2022"</span>, <span class="at">countries =</span> <span class="st">"USA"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>EdSurvey<span class="sc">::</span><span class="fu">downloadPISA</span>(<span class="at">years =</span> <span class="dv">2018</span>, <span class="at">database =</span> <span class="st">"INT"</span>, <span class="at">root =</span> <span class="st">"data/"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>pisa <span class="ot">&lt;-</span> EdSurvey<span class="sc">::</span><span class="fu">readPISA</span>(<span class="at">path =</span> <span class="st">"data/PISA/2018"</span>, <span class="at">countries =</span> <span class="st">"USA"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The <code>EdSurvey</code> package only goes to 2018. Data for <a href="https://webfs.oecd.org/pisa2022/index.html#section1">2022</a> and <a href="https://webfs.oecd.org/pisa2022/index.html#section0">2025</a> are available on the <a href="https://www.oecd.org/en/about/programmes/pisa.html">OEC website</a>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>path <span class="ot">&lt;-</span> <span class="st">'data/PISA/'</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>pisa_files <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2025</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_SCH_PUF.zip'</span>,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_STU_PUF.zip'</span>,</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_TCH_PUF.zip'</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PUF.zip'</span>,</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PROCESS_PUF.zip'</span>,</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2022</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_STU_QQQ.zip'</span>,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_SCH_QQQ.zip'</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_TCH_QQQ.zip'</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_STU_COG.zip'</span>,</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_STU_TIM.zip'</span>,</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_STU_FLT.zip'</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="effects-of-bed-nets" class="level2">
 <h2 class="anchored" data-anchor-id="effects-of-bed-nets">Effects of bed nets</h2>
 <p>See https://evalsp21.classes.andrewheiss.com/example/cace/ for more information on this dataset.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>bed_nets <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv'</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>bed_nets_time_machine <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>bed_nets <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>bed_nets_time_machine <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
