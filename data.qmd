@@ -1,5 +1,7 @@
 ---
 title: "Dataset"
+editor_options: 
+  chunk_output_type: console
 ---
 
 This page lists some of the datasets we will use in this course. You can add datasets you find to this page by clicking "Edit this page" at the bottom and submitting a pull request.
@@ -22,17 +24,20 @@ data(tutoring, package = 'TriMatch')
 
 ## The Trends in International Mathematics and Science Study (TIMSS) 
 
-
+[The Trends in International Mathematics and Science Study](https://www.iea.nl/studies/iea/timss) (TIMSS) provides reliable and timely trend data on the mathematics and science achievement of U.S. students compared to that of students in other countries. TIMSS data have been collected from students at grades 4 and 8 every 4 years since 1995, with the United States participating in every administration of TIMSS. TIMSS Advanced studies the achievement in advanced mathematics and physics of students in their final year of secondary school. It has been conducted in 1995, 2008, and 2015, with the United States participating in 1995 and 2015. TIMSS and TIMSS Advanced are sponsored by the International Association for the Evaluation of Educational Achievement (IEA) and conducted in the United States by the National Center for Education Statistics (NCES).
 
 ```{r, eval=FALSE}
 EdSurvey::downloadTIMSS(root = "data/", years = c(2019), cache = TRUE, verbose = TRUE)
-timss <- EdSurvey::readTIMSS(path = 'data/', countries = 'USA', gradeLvl = '8')
+timss <- EdSurvey::readTIMSS(path = 'data/TIMSS/2019/', countries = 'USA', gradeLvl = '8')
 ```
 
 ## Programme of International Student Assessment (PISA)
 
-```{r, eval=FALSE}
+[PISA](https://www.oecd.org/en/about/programmes/pisa.html) is the OECD's Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.
 
+```{r, eval=FALSE}
+downloadPISA(years = 2022, database = "INT", root = "data/")
+pisa <- readPISA(path = "data/PISA/2022", countries = "USA")
 ```
 
 ## Effects of bed nets

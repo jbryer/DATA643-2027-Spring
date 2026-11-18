@@ -2,34 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://spring2027.data643.net/textbooks.html</loc>
-    <lastmod>2026-11-17T20:26:28.948Z</lastmod>
+    <lastmod>2026-11-18T16:49:19.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/software.html</loc>
-    <lastmod>2025-03-14T00:26:51.000Z</lastmod>
+    <lastmod>2026-11-18T15:45:59.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/project.html</loc>
-    <lastmod>2026-11-17T20:25:33.968Z</lastmod>
+    <lastmod>2026-11-18T16:20:51.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2027.data643.net/modules/00-Intro_to_Causality.html</loc>
-    <lastmod>2026-11-17T20:45:10.458Z</lastmod>
+    <loc>https://spring2027.data643.net/modules/structural_equation_modeling.html</loc>
+    <lastmod>2026-11-18T16:43:29.000Z</lastmod>
   </url>
   <url>
-    <loc>https://spring2027.data643.net/index.html</loc>
-    <lastmod>2026-11-17T20:21:05.101Z</lastmod>
+    <loc>https://spring2027.data643.net/modules/propensity_score_analysis.html</loc>
+    <lastmod>2026-11-18T16:43:09.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2027.data643.net/modules/instrumental_variables.html</loc>
+    <lastmod>2026-11-18T16:42:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2027.data643.net/modules/causal_machine_learning.html</loc>
+    <lastmod>2026-11-18T16:42:37.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/instructor.html</loc>
-    <lastmod>2026-11-17T20:24:35.336Z</lastmod>
+    <lastmod>2026-11-17T20:24:35.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2027.data643.net/data.html</loc>
+    <lastmod>2026-11-18T16:40:54.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2027.data643.net/index.html</loc>
+    <lastmod>2026-11-17T20:21:05.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2027.data643.net/modules/causal_diagrams.html</loc>
+    <lastmod>2026-11-18T16:42:31.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2027.data643.net/modules/difference_in_differences.html</loc>
+    <lastmod>2026-11-18T16:42:46.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2027.data643.net/modules/intro_to_causality.html</loc>
+    <lastmod>2026-11-17T20:46:09.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://spring2027.data643.net/modules/regression_dicontinuity.html</loc>
+    <lastmod>2026-11-18T16:43:19.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/posts/00-Welcome.html</loc>
-    <lastmod>2026-11-17T20:43:42.862Z</lastmod>
+    <lastmod>2026-11-17T20:43:42.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/schedule.html</loc>
-    <lastmod>2026-11-17T20:45:13.206Z</lastmod>
+    <lastmod>2026-11-18T16:50:24.000Z</lastmod>
   </url>
 </urlset>

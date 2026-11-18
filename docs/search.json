@@ -4,7 +4,18 @@
     "href": "textbooks.html",
     "title": "Textbooks",
     "section": "",
-    "text": "TODO: Add textbooks\n\n\n \nWickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2025). R for Data Science (2nd Ed).\n\nThis is an open source textbook that can be accessed on the web, or a printed copy can be ordered from Amazon.",
+    "text": "Huntington-Klein, N. (2025). The Effect: An Introduction to Research Design and Causality. Chapman and Hall/CRC.",
+    "crumbs": [
+      "Course information",
+      "Textbooks"
+    ]
+  },
+  {
+    "objectID": "textbooks.html#other-reference-books",
+    "href": "textbooks.html#other-reference-books",
+    "title": "Textbooks",
+    "section": "Other Reference Books",
+    "text": "Other Reference Books\n\n \nWickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2025). R for Data Science (2nd Ed).\n\nThis is an open source textbook that can be accessed on the web, or a printed copy can be ordered from Amazon.",
     "crumbs": [
       "Course information",
       "Textbooks"
@@ -15,7 +26,7 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "R and RStudio\n\nWe will make use of R, an open source statistics program and language. Be sure to install R and RStudio on your own computers within the first few days of the class.\n\nR - download for Windows, Mac, or Linux.\nRStudio - Download Windows, Mac, or Linux versions from here\n\nIf using Windows, you also need to download RTools.\n\n\nLaTeX\n\nLaTeX is a typesetting language for preparing documents. Documents are written in plain text files. Formatting the document is done using specific markup. If you have used HTML, the framework is similar however instead of using &lt;TAG&gt;&lt;/TAG&gt; syntax, LaTeX uses \\TAG{} format. We will primarily use Markdown, and its extension R Markdown for preparing documents in this class. However, when preparing PDF documents, the Markdown will first be converted to LaTeX before creating the PDF file. As such, a LaTeX converter is necessary. There are LaTeX installers for Windows (MiKTeX) and Mac (BasicTeX). Alternatively, the tinytex R package provides an easier way of installing LaTeX directly from within R:\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n\n\n\nR Packages\n\nOnce everything is installed, execute the following command in RStudio to install the packages we will use for this class (you can copy-and-paste):\n\ninstall.packages(c('openintro','devtools','tidyverse', 'ggplot2',\n                   'psych','reshape2','knitr','markdown','shiny','R.rsp',\n                   'fivethirtyeight'))\nremotes::install_github(\"jbryer/DATA606\")\nremotes::install_github(\"jbryer/VisualStats\")\n\n\n\nSource Control\nAll course materials will be made available on Github which provides an implementation of the git open source version control system. RStudio supports git directly. For more information, Jenny Bryan’s Happy Git and Github for the useR is a free online book covering the important features of source control for R users.",
+    "text": "R and RStudio\n\nWe will make use of R, an open source statistics program and language. Be sure to install R and RStudio on your own computers within the first few days of the class.\n\nR - download for Windows, Mac, or Linux.\nRStudio - Download Windows, Mac, or Linux versions from here\n\nIf using Windows, you also need to download RTools.\n\n\nLaTeX\n\nLaTeX is a typesetting language for preparing documents. Documents are written in plain text files. Formatting the document is done using specific markup. If you have used HTML, the framework is similar however instead of using &lt;TAG&gt;&lt;/TAG&gt; syntax, LaTeX uses \\TAG{} format. We will primarily use Markdown, and its extension R Markdown for preparing documents in this class. However, when preparing PDF documents, the Markdown will first be converted to LaTeX before creating the PDF file. As such, a LaTeX converter is necessary. There are LaTeX installers for Windows (MiKTeX) and Mac (BasicTeX). Alternatively, the tinytex R package provides an easier way of installing LaTeX directly from within R:\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n\n\n\nR Packages\n\nOnce everything is installed, execute the following command in RStudio to install the packages we will use for this class (you can copy-and-paste):\n\nsource('https://github.com/jbryer/DATA643-2027-Spring/raw/refs/heads/master/R/setup.R')\n\nClick here to see the contents of the script.\n\n\nSource Control\nAll course materials will be made available on Github which provides an implementation of the git open source version control system. RStudio supports git directly. For more information, Jenny Bryan’s Happy Git and Github for the useR is a free online book covering the important features of source control for R users.",
     "crumbs": [
       "Course information",
       "Software"
@@ -26,7 +37,7 @@
     "href": "project.html",
     "title": "Data Project",
     "section": "",
-    "text": "Projects can be completed individually or as pairs. You will select an observational dataset of your choice as long as their is a variable that can be considered a treatment condition. You will work with this dataset throughout the semester applying the different statistical techniques. It is suggested that you create a Github repository and use Quarto’s website feature to build a portfolio of your work. You will be graded on the following components:",
+    "text": "Projects can be completed individually or as pairs. You will select an observational dataset of your choice as long as their is a variable that can be considered a treatment condition. You will work with this dataset throughout the semester applying the different statistical techniques. It is suggested that you create a Github repository and use Quarto’s website feature to build a portfolio of your work. You will be graded on the following components:\nClick here to sign-up for a time to give your presentation.",
     "crumbs": [
       "Course information",
       "Project"
@@ -37,42 +48,98 @@
     "href": "project.html#grading-rubric",
     "title": "Data Project",
     "section": "Grading Rubric",
-    "text": "Grading Rubric\n\n\n\nDomain\nAccomplished\nProficient\nNeeds Improvement\n\n\n\n\nAbstract\nAbstract is less than 300 words, free of grammatical errors, summarizes the analysis conducted, has a conclusion and implicaitons\n\n\n\n\nIntroduction\nThe research question is clearly stated, can be answered by the data, and the context of the problem clearly explained.\nThe research question is unclear and/or not supported by the data.\nResearch question is ambiguous, unclear, or not stated.\n\n\nData Display\nIncludes appropriate, well-labeled, accurate displays (graphs and tables) of the data.\nIncludes appropriate, accurate displays of the data.\nIncludes appropriate but no accurate displays of the data.\n\n\nData Analysis\nThe appropriate statistical test(s) was used for the data and interpretation was clear.\nThe appropriate statistical test(s) was used but interpretation was not fully clear or well articulated.\nThe incorrect statistical test was used an/or not justified for the data as presented.\n\n\nConclusion\nConclusion includes a clear answer to the statistical question that is consistent with the data analysis and the method of data collection.\nConclusion includes an answer to the statistical question that is consistent with the data but not with the data collection method.\nConclusion does not include an answer to the statistical question that is consistent with the data analysis.\n\n\nOverall Presentation\nAttractive, well-organized, well-written presentation\nPresentation has two of the three qualities: attractive, well-organized, well-written.\nPresentation is not attractive, organized, or written. There are numerous errors throughout.",
+    "text": "Grading Rubric\n\n\n\n\nDomain\nAccomplished\nProficient\nNeeds Improvement\n\n\n\n\nAbstract\nAbstract is less than 300 words, free of grammatical errors, summarizes the analysis conducted, has a conclusion and implicaitons\n\n\n\n\nIntroduction\nThe research question is clearly stated, can be answered by the data, and the context of the problem clearly explained.\nThe research question is unclear and/or not supported by the data.\nResearch question is ambiguous, unclear, or not stated.\n\n\nData Display\nIncludes appropriate, well-labeled, accurate displays (graphs and tables) of the data.\nIncludes appropriate, accurate displays of the data.\nIncludes appropriate but no accurate displays of the data.\n\n\nData Analysis\nThe appropriate statistical test(s) was used for the data and interpretation was clear.\nThe appropriate statistical test(s) was used but interpretation was not fully clear or well articulated.\nThe incorrect statistical test was used an/or not justified for the data as presented.\n\n\nConclusion\nConclusion includes a clear answer to the statistical question that is consistent with the data analysis and the method of data collection.\nConclusion includes an answer to the statistical question that is consistent with the data but not with the data collection method.\nConclusion does not include an answer to the statistical question that is consistent with the data analysis.\n\n\nOverall Presentation\nAttractive, well-organized, well-written presentation\nPresentation has two of the three qualities: attractive, well-organized, well-written.\nPresentation is not attractive, organized, or written. There are numerous errors throughout.",
     "crumbs": [
       "Course information",
       "Project"
     ]
   },
   {
-    "objectID": "modules/00-Intro_to_Causality.html#assignments",
-    "href": "modules/00-Intro_to_Causality.html#assignments",
-    "title": "Introduction to Causality",
+    "objectID": "modules/structural_equation_modeling.html#assignments",
+    "href": "modules/structural_equation_modeling.html#assignments",
+    "title": "Structural Equation Modeling",
     "section": "Assignments",
     "text": "Assignments",
     "crumbs": [
       "Topics",
-      "Introduction to Causality"
+      "Structural Equation Modeling"
     ]
   },
   {
-    "objectID": "modules/00-Intro_to_Causality.html#supplemental-videos",
-    "href": "modules/00-Intro_to_Causality.html#supplemental-videos",
-    "title": "Introduction to Causality",
+    "objectID": "modules/structural_equation_modeling.html#supplemental-videos",
+    "href": "modules/structural_equation_modeling.html#supplemental-videos",
+    "title": "Structural Equation Modeling",
     "section": "Supplemental Videos",
     "text": "Supplemental Videos",
     "crumbs": [
       "Topics",
-      "Introduction to Causality"
+      "Structural Equation Modeling"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "DATA643 Causality",
-    "section": "",
-    "text": "Be sure to check this page regularly for updates. In addition to periodic updates about the course, slides and recordings of the weekly meetups will be posted here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to DATA643!\n\n\nImportant information on how to get started with this course. Please read this post carefully.\n\n\n\n\n\nJan 1, 2027\n\n\n\n\n\nNo matching items",
+    "objectID": "modules/propensity_score_analysis.html#assignments",
+    "href": "modules/propensity_score_analysis.html#assignments",
+    "title": "Propensity Score Analysis",
+    "section": "Assignments",
+    "text": "Assignments",
     "crumbs": [
-      "Announcements"
+      "Topics",
+      "Propensity Score Analysis"
+    ]
+  },
+  {
+    "objectID": "modules/propensity_score_analysis.html#supplemental-videos",
+    "href": "modules/propensity_score_analysis.html#supplemental-videos",
+    "title": "Propensity Score Analysis",
+    "section": "Supplemental Videos",
+    "text": "Supplemental Videos",
+    "crumbs": [
+      "Topics",
+      "Propensity Score Analysis"
+    ]
+  },
+  {
+    "objectID": "modules/instrumental_variables.html#assignments",
+    "href": "modules/instrumental_variables.html#assignments",
+    "title": "Instrumental Variables",
+    "section": "Assignments",
+    "text": "Assignments",
+    "crumbs": [
+      "Topics",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "modules/instrumental_variables.html#supplemental-videos",
+    "href": "modules/instrumental_variables.html#supplemental-videos",
+    "title": "Instrumental Variables",
+    "section": "Supplemental Videos",
+    "text": "Supplemental Videos",
+    "crumbs": [
+      "Topics",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "modules/causal_machine_learning.html#assignments",
+    "href": "modules/causal_machine_learning.html#assignments",
+    "title": "Causal Machine Learning",
+    "section": "Assignments",
+    "text": "Assignments",
+    "crumbs": [
+      "Topics",
+      "Causal Machine Learning"
+    ]
+  },
+  {
+    "objectID": "modules/causal_machine_learning.html#supplemental-videos",
+    "href": "modules/causal_machine_learning.html#supplemental-videos",
+    "title": "Causal Machine Learning",
+    "section": "Supplemental Videos",
+    "text": "Supplemental Videos",
+    "crumbs": [
+      "Topics",
+      "Causal Machine Learning"
     ]
   },
   {
@@ -87,6 +154,146 @@
     ]
   },
   {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Dataset",
+    "section": "",
+    "text": "This page lists some of the datasets we will use in this course. You can add datasets you find to this page by clicking “Edit this page” at the bottom and submitting a pull request."
+  },
+  {
+    "objectID": "data.html#national-medical-expenditure-study",
+    "href": "data.html#national-medical-expenditure-study",
+    "title": "Dataset",
+    "section": "National Medical Expenditure Study",
+    "text": "National Medical Expenditure Study\nResults from the 1987 National Medical Expenditure Study\n\ndata(nmes, package = 'TriMatch')"
+  },
+  {
+    "objectID": "data.html#effects-of-tutoring-services-on-course-grades",
+    "href": "data.html#effects-of-tutoring-services-on-course-grades",
+    "title": "Dataset",
+    "section": "Effects of tutoring services on course grades",
+    "text": "Effects of tutoring services on course grades\nResults from a study examining the effects of tutoring services on course grades. This is the dataset that inspired the TriMatch package for making matched triplets (i.e. three groups, two treatments, one control).\n\ndata(tutoring, package = 'TriMatch')"
+  },
+  {
+    "objectID": "data.html#the-trends-in-international-mathematics-and-science-study-timss",
+    "href": "data.html#the-trends-in-international-mathematics-and-science-study-timss",
+    "title": "Dataset",
+    "section": "The Trends in International Mathematics and Science Study (TIMSS)",
+    "text": "The Trends in International Mathematics and Science Study (TIMSS)\nThe Trends in International Mathematics and Science Study (TIMSS) provides reliable and timely trend data on the mathematics and science achievement of U.S. students compared to that of students in other countries. TIMSS data have been collected from students at grades 4 and 8 every 4 years since 1995, with the United States participating in every administration of TIMSS. TIMSS Advanced studies the achievement in advanced mathematics and physics of students in their final year of secondary school. It has been conducted in 1995, 2008, and 2015, with the United States participating in 1995 and 2015. TIMSS and TIMSS Advanced are sponsored by the International Association for the Evaluation of Educational Achievement (IEA) and conducted in the United States by the National Center for Education Statistics (NCES).\n\nEdSurvey::downloadTIMSS(root = \"data/\", years = c(2019), cache = TRUE, verbose = TRUE)\ntimss &lt;- EdSurvey::readTIMSS(path = 'data/TIMSS/2019/', countries = 'USA', gradeLvl = '8')"
+  },
+  {
+    "objectID": "data.html#programme-of-international-student-assessment-pisa",
+    "href": "data.html#programme-of-international-student-assessment-pisa",
+    "title": "Dataset",
+    "section": "Programme of International Student Assessment (PISA)",
+    "text": "Programme of International Student Assessment (PISA)\nPISA is the OECD’s Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.\n\ndownloadPISA(years = 2022, database = \"INT\", root = \"data/\")\npisa &lt;- readPISA(path = \"data/PISA/2022\", countries = \"USA\")"
+  },
+  {
+    "objectID": "data.html#effects-of-bed-nets",
+    "href": "data.html#effects-of-bed-nets",
+    "title": "Dataset",
+    "section": "Effects of bed nets",
+    "text": "Effects of bed nets\nSee https://evalsp21.classes.andrewheiss.com/example/cace/ for more information on this dataset.\n\nbed_nets &lt;- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv')\nbed_nets_time_machine &lt;- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv')"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "DATA643 Causality",
+    "section": "",
+    "text": "Be sure to check this page regularly for updates. In addition to periodic updates about the course, slides and recordings of the weekly meetups will be posted here.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to DATA643!\n\n\nImportant information on how to get started with this course. Please read this post carefully.\n\n\n\n\n\nJan 1, 2027\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Announcements"
+    ]
+  },
+  {
+    "objectID": "modules/causal_diagrams.html#assignments",
+    "href": "modules/causal_diagrams.html#assignments",
+    "title": "Causal Diagrams",
+    "section": "Assignments",
+    "text": "Assignments",
+    "crumbs": [
+      "Topics",
+      "Causal Diagrams"
+    ]
+  },
+  {
+    "objectID": "modules/causal_diagrams.html#supplemental-videos",
+    "href": "modules/causal_diagrams.html#supplemental-videos",
+    "title": "Causal Diagrams",
+    "section": "Supplemental Videos",
+    "text": "Supplemental Videos",
+    "crumbs": [
+      "Topics",
+      "Causal Diagrams"
+    ]
+  },
+  {
+    "objectID": "modules/difference_in_differences.html#assignments",
+    "href": "modules/difference_in_differences.html#assignments",
+    "title": "Difference in Differences",
+    "section": "Assignments",
+    "text": "Assignments",
+    "crumbs": [
+      "Topics",
+      "Difference in Differences"
+    ]
+  },
+  {
+    "objectID": "modules/difference_in_differences.html#supplemental-videos",
+    "href": "modules/difference_in_differences.html#supplemental-videos",
+    "title": "Difference in Differences",
+    "section": "Supplemental Videos",
+    "text": "Supplemental Videos",
+    "crumbs": [
+      "Topics",
+      "Difference in Differences"
+    ]
+  },
+  {
+    "objectID": "modules/intro_to_causality.html#assignments",
+    "href": "modules/intro_to_causality.html#assignments",
+    "title": "Introduction to Causality",
+    "section": "Assignments",
+    "text": "Assignments",
+    "crumbs": [
+      "Topics",
+      "Introduction to Causality"
+    ]
+  },
+  {
+    "objectID": "modules/intro_to_causality.html#supplemental-videos",
+    "href": "modules/intro_to_causality.html#supplemental-videos",
+    "title": "Introduction to Causality",
+    "section": "Supplemental Videos",
+    "text": "Supplemental Videos",
+    "crumbs": [
+      "Topics",
+      "Introduction to Causality"
+    ]
+  },
+  {
+    "objectID": "modules/regression_dicontinuity.html#assignments",
+    "href": "modules/regression_dicontinuity.html#assignments",
+    "title": "Regression Discontinuity",
+    "section": "Assignments",
+    "text": "Assignments",
+    "crumbs": [
+      "Topics",
+      "Regression Discontinuity"
+    ]
+  },
+  {
+    "objectID": "modules/regression_dicontinuity.html#supplemental-videos",
+    "href": "modules/regression_dicontinuity.html#supplemental-videos",
+    "title": "Regression Discontinuity",
+    "section": "Supplemental Videos",
+    "text": "Supplemental Videos",
+    "crumbs": [
+      "Topics",
+      "Regression Discontinuity"
+    ]
+  },
+  {
     "objectID": "posts/00-Welcome.html",
     "href": "posts/00-Welcome.html",
     "title": "Welcome to DATA643!",
@@ -98,7 +305,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses.\nWe will have meetups on Monday evenings at 7:00pm. Click here to join the meetup.\nMeetups will be recorded and made available the next day on the course website. Although attending live is not strictly required, I expect everyone to watch the lectures during the week. I use the class meetups to convey important information and announcements. Very often I will cover some topics not in the textbook. Students who attend the meetups tend to do well on the assignments.\n\n\n\n\nWeek\nDate\nStartTime\nTopic\nPrepare\nLab\nLink\nVideo\nSlides\n\n\n\n\n1\n2027-02-01\n\nIntroduction to Causality\n\n\n\n\n\n\n\n2\n2027-02-08\n\nDesigning Studies for Causaility\n\n\n\n\n\n\n\n3\n2027-02-15\n\nPropensity Score Analysis\n\n\n\n\n\n\n\n4\n2027-02-22\n\nPropensity Score Matching\n\n\n\n\n\n\n\n5\n2027-03-01\n\nSensitivity Analysis\n\n\n\n\n\n\n\n6\n2027-03-08\n\nExtensions of PSA\n\n\n\n\n\n\n\n7\n2027-03-15\n\nCausal Diagrams (DAGs)\n\n\n\n\n\n\n\n8\n2027-03-22\n\nStructural Equation Modeling\n\n\n\n\n\n\n\n9\n2027-03-29\n\nCausal Machine Learning\n\n\n\n\n\n\n\n10\n2027-04-05\n\nDifference-in-differences\n\n\n\n\n\n\n\n11\n2027-04-12\n\nInstrumental Variables\n\n\n\n\n\n\n\n12\n2027-04-19\n\nRegression Discontinuity\n\n\n\n\n\n\n\n\n2027-04-26\n\nSPRING BREAK - NO CLASS\n\n\n\n\n\n\n\n13\n2027-05-03\n\nPresentations\n\n\n\n\n\n\n\n14\n2027-05-10\n\nPresentations - Final Meetup",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses.\nWe will have meetups on Monday evenings at 7:00pm. Click here to join the meetup.\nMeetups will be recorded and made available the next day on the course website. Although attending live is not strictly required, I expect everyone to watch the lectures during the week. I use the class meetups to convey important information and announcements. Very often I will cover some topics not in the textbook. Students who attend the meetups tend to do well on the assignments.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nStartTime\nTopic\nPrepare\nLab\nLink\nVideo\nSlides\n\n\n\n\n1\n2027-02-01\n\nIntroduction to Causality\n\n\n\n\n\n\n\n\n\n\n\n2\n2027-02-08\n\nDesigning Studies for Causaility\n\n\n\n\n\n\n\n\n\n\n\n3\n2027-02-15\n\nPropensity Score Analysis\n\n\n\n\n\n\n\n\n\n\n\n4\n2027-02-22\n\nPropensity Score Matching\n\n\n\n\n\n\n\n\n\n\n\n5\n2027-03-01\n\nSensitivity Analysis\n\n\n\n\n\n\n\n\n\n\n\n6\n2027-03-08\n\nExtensions of PSA\n\n\n\n\n\n\n\n\n\n\n\n7\n2027-03-15\n\nCausal Diagrams (DAGs)\n\n\n\n\n\n\n\n\n\n\n\n8\n2027-03-22\n\nStructural Equation Modeling\n\n\n\n\n\n\n\n\n\n\n\n9\n2027-03-29\n\nCausal Machine Learning\n\n\n\n\n\n\n\n\n\n\n\n10\n2027-04-05\n\nDifference-in-differences\n\n\n\n\n\n\n\n\n\n\n\n11\n2027-04-12\n\nInstrumental Variables\n\n\n\n\n\n\n\n\n\n\n\n12\n2027-04-19\n\nRegression Discontinuity\n\n\n\n\n\n\n\n\n\n\n\n\n2027-04-26\n\nSPRING BREAK - NO CLASS\n\n\n\n\n\n\n\n13\n2027-05-03\n\nPresentations\n\n\n\n\n\n\n\n14\n2027-05-10\n\nPresentations - Final Meetup",
     "crumbs": [
       "Schedule"
     ]

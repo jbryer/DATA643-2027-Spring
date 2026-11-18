@@ -2,10 +2,25 @@
 title: "Textbooks"
 ---
 
+<a href="https://r4ds.hadley.nz"><img src='/images/the_effect.jpg' alt='The Effect: An Introduction to Research Design and Causality' align='left' style="height:125px; padding-left:10px; padding-right:10px;"/></a>
+</a>
 
-TODO: Add textbooks
+[Huntington-Klein, N. (2025). *The Effect: An Introduction to Research Design and Causality.* Chapman and Hall/CRC.](https://www.theeffectbook.net/index.html)
 
-<br />
+####
+
+[Barrett, M., McGowan, L.D., & Gerke, T. (2026). *Causal Inference in R*](https://www.r-causal.org)
+
+<a href="https://r4ds.hadley.nz"><img src='/images/What_If.jpg' alt='Causal Inference: What If' align='left' style="height:125px; padding-left:10px; padding-right:10px;"/></a>
+</a>
+
+####
+
+[Hernán MA, Robins JM (2020). *Causal Inference: What If*. Boca Raton: Chapman & Hall/CRC](https://static1.squarespace.com/static/675db8b0dd37046447128f5f/t/6a86cf7ecfcb6b4ca8eea5cb/1787219838424/hernanrobins_WhatIf_19aug26.pdf)
+
+<br /><br />
+
+## Other Reference Books
 
 <!-- R for Data Science -->
 

@@ -44,6 +44,10 @@ library("wordcloud")
 
 ##### Global Configurations ########################################################################
 
+options(
+	knitr.kable.NA = ""
+)
+
 opts_chunk$set(
 	digits = 3, 
 	width = 120,

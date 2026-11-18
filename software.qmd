@@ -34,9 +34,10 @@ tinytex::install_tinytex()
 Once everything is installed, execute the following command in RStudio to install the packages we will use for this class (you can copy-and-paste):
 
 ```{r, eval=FALSE}
-source('')
+source('https://github.com/jbryer/DATA643-2027-Spring/raw/refs/heads/master/R/setup.R')
 ```
 
+[Click here](https://github.com/jbryer/DATA643-2027-Spring/raw/refs/heads/master/R/setup.R) to see the contents of the script.
 
 ### Source Control
 

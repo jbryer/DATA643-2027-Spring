@@ -2,6 +2,10 @@
 title: "Data Project"
 ---
 
+```{r, echo=FALSE, message=FALSE, warning=FALSE, error=FALSE, results='hide'}
+source('config.R')
+```
+
 Projects can be completed individually or as pairs. You will select an observational dataset of your choice as long as their is a variable that can be considered a treatment condition. You will work with this dataset throughout the semester applying the different statistical techniques. It is suggested that you create a Github repository and use Quarto's website feature to build a portfolio of your work. You will be graded on the following components:
 
 * Analysis Log (10%) - This is a document that outlines the analysis conducted in R or Python. Feedback will be provided after each major topic.

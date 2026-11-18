@@ -108,9 +108,22 @@ website:
             text: "Textbooks"
       - section: "Topics"
         contents:
-          - href: modules/00-Intro_to_Causality.qmd
+          - href: modules/intro_to_causality.qmd
             text: "Introduction to Causality"
-
+          - href: modules/propensity_score_analysis.qmd
+            text: "Propensity Score Analysis"
+          - href: modules/causal_diagrams.qmd
+            text: "Causal Diagrams"
+          - href: modules/structural_equation_modeling.qmd
+            text: "Structural Equation Modeling"
+          - href: modules/causal_machine_learning.qmd
+            text: "Causal Machine Learning"
+          - href: modules/difference_in_differences.qmd
+            text: "Difference in Differences"
+          - href: modules/instrumental_variables.qmd
+            text: "Instrumental Variables"
+          - href: modules/regression_dicontinuity.qmd
+            text: "Regression Discontinuity"
 format:
   html:
     theme:
