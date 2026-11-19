@@ -10,3 +10,11 @@ title: "Causal Diagrams"
 
 ## Supplemental Videos
 
+{{< video https://www.youtube.com/watch?v=J6P4RwWdGBw >}}
+
+{{< video https://www.youtube.com/watch?v=aMNGfodzKO8 >}}
+
+{{< video https://www.youtube.com/watch?v=NOslfkYr_II >}}
+
+{{< video https://www.youtube.com/watch?v=h5C2iMoHFag >}}
+

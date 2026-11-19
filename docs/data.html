@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Dataset – DATA643 Causality</title>
+<title>Datasets – DATA643 Causality</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -70,6 +70,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./modules/intro_to_causality.html" rel="next">
+<link href="./textbooks.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -113,12 +115,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<meta property="og:title" content="Dataset – DATA643 Causality">
+<meta property="og:title" content="Datasets – DATA643 Causality">
 <meta property="og:description" content="CUNY School of Professional Studies">
 <meta property="og:site_name" content="DATA643 Causality">
 </head>
 
-<body class="nav-sidebar docked fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -292,7 +294,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Dataset</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./syllabus.pdf">Course information</a></li><li class="breadcrumb-item"><a href="./data.html">Datasets</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -396,6 +398,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">Textbooks</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Datasets</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -462,14 +470,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Datasets</h2>
+   
+  <ul>
+  <li><a href="#national-medical-expenditure-study" id="toc-national-medical-expenditure-study" class="nav-link active" data-scroll-target="#national-medical-expenditure-study">National Medical Expenditure Study</a></li>
+  <li><a href="#effects-of-tutoring-services-on-course-grades" id="toc-effects-of-tutoring-services-on-course-grades" class="nav-link" data-scroll-target="#effects-of-tutoring-services-on-course-grades">Effects of tutoring services on course grades</a></li>
+  <li><a href="#the-trends-in-international-mathematics-and-science-study-timss" id="toc-the-trends-in-international-mathematics-and-science-study-timss" class="nav-link" data-scroll-target="#the-trends-in-international-mathematics-and-science-study-timss">The Trends in International Mathematics and Science Study (TIMSS)</a></li>
+  <li><a href="#effects-of-bed-nets" id="toc-effects-of-bed-nets" class="nav-link" data-scroll-target="#effects-of-bed-nets">Effects of bed nets</a></li>
+  <li><a href="#causaldata-r-package" id="toc-causaldata-r-package" class="nav-link" data-scroll-target="#causaldata-r-package"><code>causaldata</code> R package</a></li>
+  <li><a href="#forcausality-r-package" id="toc-forcausality-r-package" class="nav-link" data-scroll-target="#forcausality-r-package"><code>ForCausality</code> R package</a></li>
+  <li><a href="#gerber-and-green-dataset-used-by-imai" id="toc-gerber-and-green-dataset-used-by-imai" class="nav-link" data-scroll-target="#gerber-and-green-dataset-used-by-imai">Gerber and Green Dataset used by Imai</a></li>
+  <li><a href="#linked-birthinfant-death-cohort-data" id="toc-linked-birthinfant-death-cohort-data" class="nav-link" data-scroll-target="#linked-birthinfant-death-cohort-data">Linked Birth/Infant Death Cohort Data</a></li>
+  <li><a href="#programme-of-international-student-assessment-pisa" id="toc-programme-of-international-student-assessment-pisa" class="nav-link" data-scroll-target="#programme-of-international-student-assessment-pisa">Programme of International Student Assessment (PISA)</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://jbryer.github.io/DATA643-2027-Spring/edit/master/website/data.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://jbryer.github.io/DATA643-2027-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./syllabus.pdf">Course information</a></li><li class="breadcrumb-item"><a href="./data.html">Datasets</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Dataset</h1>
+<h1 class="title">Datasets</h1>
 </div>
 
 
@@ -509,39 +533,346 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>timss <span class="ot">&lt;-</span> EdSurvey<span class="sc">::</span><span class="fu">readTIMSS</span>(<span class="at">path =</span> <span class="st">'data/TIMSS/2019/'</span>, <span class="at">countries =</span> <span class="st">'USA'</span>, <span class="at">gradeLvl =</span> <span class="st">'8'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="programme-of-international-student-assessment-pisa" class="level2">
-<h2 class="anchored" data-anchor-id="programme-of-international-student-assessment-pisa">Programme of International Student Assessment (PISA)</h2>
-<p><a href="https://www.oecd.org/en/about/programmes/pisa.html">PISA</a> is the OECD’s Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>EdSurvey<span class="sc">::</span><span class="fu">downloadPISA</span>(<span class="at">years =</span> <span class="dv">2018</span>, <span class="at">database =</span> <span class="st">"INT"</span>, <span class="at">root =</span> <span class="st">"data/"</span>)</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>pisa <span class="ot">&lt;-</span> EdSurvey<span class="sc">::</span><span class="fu">readPISA</span>(<span class="at">path =</span> <span class="st">"data/PISA/2018"</span>, <span class="at">countries =</span> <span class="st">"USA"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>The <code>EdSurvey</code> package only goes to 2018. Data for <a href="https://webfs.oecd.org/pisa2022/index.html#section1">2022</a> and <a href="https://webfs.oecd.org/pisa2022/index.html#section0">2025</a> are available on the <a href="https://www.oecd.org/en/about/programmes/pisa.html">OEC website</a>.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>path <span class="ot">&lt;-</span> <span class="st">'data/PISA/'</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>pisa_files <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2025</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_SCH_PUF.zip'</span>,</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_STU_PUF.zip'</span>,</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_TCH_PUF.zip'</span>,</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PUF.zip'</span>,</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PROCESS_PUF.zip'</span>,</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2022</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_STU_QQQ.zip'</span>,</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_SCH_QQQ.zip'</span>,</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_TCH_QQQ.zip'</span>,</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_STU_COG.zip'</span>,</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_STU_TIM.zip'</span>,</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'https://webfs.oecd.org/pisa2018/SPSS_STU_FLT.zip'</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</section>
 <section id="effects-of-bed-nets" class="level2">
 <h2 class="anchored" data-anchor-id="effects-of-bed-nets">Effects of bed nets</h2>
 <p>See https://evalsp21.classes.andrewheiss.com/example/cace/ for more information on this dataset.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>bed_nets <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv'</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>bed_nets_time_machine <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>bed_nets <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv'</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>bed_nets_time_machine <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">'https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="causaldata-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="causaldata-r-package"><code>causaldata</code> R package</h2>
+<p>The <a href="https://github.com/nickch-k/causaldata"><code>causaldata</code></a> R package contains a number of datasets from the books <a href="https://theeffectbook.net/"><em>The Effect</em></a>, <a href="https://mixtape.scunning.com/index.html"><em>Causal Inference: The Mixtape</em></a>, and <a href="https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/"><em>Causal Inference: What If?</em></a>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>causaldata_tables <span class="ot">&lt;-</span> <span class="fu">data</span>(<span class="at">package =</span> <span class="st">'causaldata'</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(causaldata_tables<span class="sc">$</span>results[,<span class="fu">c</span>(<span class="st">'Item'</span>, <span class="st">'Title'</span>)], <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mroz</td>
+<td style="text-align: left;">U.S. Women’s Labor-Force Participation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">abortion</td>
+<td style="text-align: left;">Data on abortion legalization and sexually transmitted infections</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">adult_services</td>
+<td style="text-align: left;">Data from a survey of internet-mediated sex workers</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">auto</td>
+<td style="text-align: left;">Automobile data from Stata</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">avocado</td>
+<td style="text-align: left;">Data on avocado sales</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">black_politicians</td>
+<td style="text-align: left;">Data from “Black Politicians are More Intrinsically Motivated to Advance Blacks’ Interests”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">castle</td>
+<td style="text-align: left;">Data on castle-doctrine statutes and violent crime</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ccdrug</td>
+<td style="text-align: left;">Data on Drug Arrests from the Crown Court Sentencing Survey</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">close_college</td>
+<td style="text-align: left;">Data from Card (1995) to estimate the effect of college education on earnings</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">close_elections_lmb</td>
+<td style="text-align: left;">A close-elections regression discontinuity study from Lee, Moretti, and Butler (2004)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">cps_mixtape</td>
+<td style="text-align: left;">Observational counterpart to nsw_mixtape data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">credit_cards</td>
+<td style="text-align: left;">Data on Taiwanese Credit Card Holders</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gapminder</td>
+<td style="text-align: left;">Gapminder data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">google_stock</td>
+<td style="text-align: left;">Google Stock Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">gov_transfers</td>
+<td style="text-align: left;">Data from “Government Transfers and Political Support”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">gov_transfers_density</td>
+<td style="text-align: left;">Data from “Government Transfers and Political Support” for Density Tests</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">greek_data</td>
+<td style="text-align: left;">Data from a fictional randomized heart transplant study</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mortgages</td>
+<td style="text-align: left;">Data from “How do Mortgage Subsidies Affect Home Ownership? Evidence from the Mid-Century GI Bills”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">nhefs</td>
+<td style="text-align: left;">National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nhefs_codebook</td>
+<td style="text-align: left;">NHEFS Codebook</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">nhefs_complete</td>
+<td style="text-align: left;">Complete-Data National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">nsw_mixtape</td>
+<td style="text-align: left;">Data from the National Supported Work Demonstration (NSW) job-training program</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">organ_donations</td>
+<td style="text-align: left;">Organ Donation Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">restaurant_inspections</td>
+<td style="text-align: left;">Data on Restaurant Inspections</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ri</td>
+<td style="text-align: left;">A simple simulated data set for calculating p-values</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">scorecard</td>
+<td style="text-align: left;">Earnings and Loan Repayment in US Four-Year Colleges</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">snow</td>
+<td style="text-align: left;">Data from John Snow’s 1855 study of the cause of cholera</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">social_insure</td>
+<td style="text-align: left;">Data from “Social Networks and the Decision to Insure”</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">texas</td>
+<td style="text-align: left;">Data on prison capacity expansion in Texas</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">thornton_hiv</td>
+<td style="text-align: left;">Data from HIV information experiment in Thornton (2008)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">titanic</td>
+<td style="text-align: left;">Data from the sinking of the Titanic</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">training_bias_reduction</td>
+<td style="text-align: left;">Simulated data from a job training program for a bias reduction method</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">training_example</td>
+<td style="text-align: left;">Simulated data from a job training program</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">yule</td>
+<td style="text-align: left;">Data on 19th century English Poverty from Yule (1899)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="forcausality-r-package" class="level2">
+<h2 class="anchored" data-anchor-id="forcausality-r-package"><code>ForCausality</code> R package</h2>
+<p>Provides a comprehensive set of datasets and tools for ‘causal inference’ research. The package includes data from clinical trials, cancer studies, epidemiological surveys, environmental exposures, and health-related observational studies. Designed to facilitate causal analysis, risk assessment, and advanced statistical modeling, it leverages datasets from packages such as ‘causalOT’, ‘survival’, ‘causalPAF’, ‘evident’, ‘melt’, and ‘sanon’.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>ForCausality_tables <span class="ot">&lt;-</span> <span class="fu">data</span>(<span class="at">package =</span> <span class="st">'ForCausality'</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(ForCausality_tables<span class="sc">$</span>results[,<span class="fu">c</span>(<span class="st">'Item'</span>, <span class="st">'Title'</span>)], <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 81%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Item</th>
+<th style="text-align: left;">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Benzene_df</td>
+<td style="text-align: left;">Benzene Exposure and Chromosome Damage Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cloth_df</td>
+<td style="text-align: left;">Clothianidin Concentration in Maize Plants</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Colon_df</td>
+<td style="text-align: left;">Chemotherapy Data for Stage B/C Colon Cancer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Gbsg_df</td>
+<td style="text-align: left;">Breast Cancer Prognostic Data (German Breast Cancer Study Group)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Lead_df</td>
+<td style="text-align: left;">Lead Exposure Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mouse_df</td>
+<td style="text-align: left;">Mouse Cancer Trial Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pain_df</td>
+<td style="text-align: left;">Chronic Pain Clinical Trial Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Periodontal_df</td>
+<td style="text-align: left;">Periodontal Disease Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Pph_df</td>
+<td style="text-align: left;">External Control Trial Data for Post-partum Hemorrhage</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Resp_df</td>
+<td style="text-align: left;">Respiratory Disorder Clinical Trial Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Rotterdam_df</td>
+<td style="text-align: left;">Breast Cancer Prognostic Data (Rotterdam Study)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sebor_df</td>
+<td style="text-align: left;">Seborrheic Dermatitis Clinical Trial Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Skin_df</td>
+<td style="text-align: left;">Skin Condition Clinical Trial Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SmokeH_df</td>
+<td style="text-align: left;">Smoking and Homocysteine Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Stroke_df</td>
+<td style="text-align: left;">Ischemic Stroke Case-Control Data</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Thiam_df</td>
+<td style="text-align: left;">Thiamethoxam Application and Crop Yield Data</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Udca_df</td>
+<td style="text-align: left;">Ursodeoxycholic Acid Trial Data</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="gerber-and-green-dataset-used-by-imai" class="level2">
+<h2 class="anchored" data-anchor-id="gerber-and-green-dataset-used-by-imai">Gerber and Green Dataset used by Imai</h2>
+<p>This is a classic dataset used to show propensity score analysis, however if you read the following articles you will see there is much debate about the analyses conducted by Gerber and Donald as well as Imai.</p>
+<p>Gerber A.S. &amp; Donald, P.G. (2000). The effects of personal canvassing, telephone calls, and direct mail on voter turnout: A field experiment. <em>American Political Science Review, 94</em>(3), 653– 64.</p>
+<p>Imai, K. (2005). Do get-out-the-vote calls reduce turnout? The importance of statistical methods for field experiments. <em>American Political Science Review, 99</em>(2), 283– 300.</p>
+<p>Gerber, A.S. &amp; Donald P.G. (2005). Correction to Gerber and Green (2000), replication of disputed findings, and reply to Imai (2005). <em>American Political Science Review, 99</em>(2), 301-13.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(GerberGreenImai, <span class="at">package =</span> <span class="st">'Matching'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="linked-birthinfant-death-cohort-data" class="level2">
+<h2 class="anchored" data-anchor-id="linked-birthinfant-death-cohort-data">Linked Birth/Infant Death Cohort Data</h2>
+<p>Data on twins from the <a href="https://www.nber.org/research/data/linked-birthinfant-death-cohort-data">National Bureau of Economic Research</a>. These data are based on this paper:</p>
+<p>Almond, D., Chay, K.Y, &amp; Lee, D.S. (2005). The costs of low birth weight. <em>The Quarterly Journal of Economics, 120</em>(3), 1031-1083.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(twins, <span class="at">package =</span> <span class="st">'psa'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="programme-of-international-student-assessment-pisa" class="level2">
+<h2 class="anchored" data-anchor-id="programme-of-international-student-assessment-pisa">Programme of International Student Assessment (PISA)</h2>
+<p><a href="https://www.oecd.org/en/about/programmes/pisa.html">PISA</a> is the OECD’s Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Years available using the EdSurvey package: 2000 2003 2006 2009 2012 2015 2018</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>EdSurvey<span class="sc">::</span><span class="fu">downloadPISA</span>(<span class="at">years =</span> <span class="dv">2018</span>, <span class="at">database =</span> <span class="st">"INT"</span>, <span class="at">root =</span> <span class="st">"data/"</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>pisa2018 <span class="ot">&lt;-</span> EdSurvey<span class="sc">::</span><span class="fu">readPISA</span>(<span class="at">path =</span> <span class="st">"data/PISA/2018"</span>, <span class="at">countries =</span> <span class="st">"USA"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>The <code>EdSurvey</code> package only goes to 2018. Data for <a href="https://webfs.oecd.org/pisa2022/index.html#section1">2022</a> and <a href="https://webfs.oecd.org/pisa2022/index.html#section0">2025</a> are available on the <a href="https://www.oecd.org/en/about/programmes/pisa.html">OEC website</a>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>path <span class="ot">&lt;-</span> <span class="st">'data/PISA/'</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">#' Download zip files from urls</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>download_zip_files <span class="ot">&lt;-</span> <span class="cf">function</span>(urls, dest, <span class="at">keep_zip =</span> <span class="cn">FALSE</span>) {</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">dir.create</span>(dest, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span>(i <span class="cf">in</span> urls) {</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        dest_file <span class="ot">&lt;-</span> <span class="fu">file.path</span>(dest, <span class="fu">basename</span>(i))</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">download.file</span>(i, dest_file)</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">unzip</span>(dest_file, <span class="at">exdir =</span> dest)</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span>(<span class="sc">!</span>keep_zip) {</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>            <span class="fu">unlink</span>(dest_file)</span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a><span class="co"># 2025 PISA</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="fu">download_zip_files</span>(</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">urls =</span> <span class="fu">c</span>(</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>        <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_SCH_PUF.zip'</span>,</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>        <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_STU_PUF.zip'</span>,</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>        <span class="st">'https://webfs.oecd.org/pisa2022/2025/CY09_MS_TCH_PUF.zip'</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Optional other files</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PUF.zip',</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PROCESS_PUF.zip'</span></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">dest =</span> <span class="fu">file.path</span>(path, <span class="st">'2025'</span>)</span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a><span class="co"># You will have to load and merge the data frames manually</span></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>pisa2025_student <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="fu">file.path</span>(path, <span class="st">'2025'</span>, <span class="st">'CY09_MS_SCH_PUF.SAV'</span>))</span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>pisa2025_school <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="fu">file.path</span>(path, <span class="st">'2025'</span>, <span class="st">'CY09_MS_SCH_PUF.SAV'</span>))</span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>pisa2025_teacher <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="fu">file.path</span>(path, <span class="st">'2025'</span>, <span class="st">'CY09_MS_TCH_PUF.sav'</span>))</span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pisa2025_student, pisa2025_school, pisa2025_teacher, <span class="at">file =</span> <span class="st">'data/pisa2025.rda'</span>) <span class="co"># You can use load() to read it back in</span></span>
+<span id="cb10-33"><a href="#cb10-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-34"><a href="#cb10-34" aria-hidden="true" tabindex="-1"></a><span class="co"># 2022 PISA</span></span>
+<span id="cb10-35"><a href="#cb10-35" aria-hidden="true" tabindex="-1"></a><span class="fu">download_zip_files</span>(</span>
+<span id="cb10-36"><a href="#cb10-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">urls =</span> <span class="fu">c</span>(</span>
+<span id="cb10-37"><a href="#cb10-37" aria-hidden="true" tabindex="-1"></a>        <span class="st">'https://webfs.oecd.org/pisa2022/SCH_QQQ_SPSS.zip'</span>,</span>
+<span id="cb10-38"><a href="#cb10-38" aria-hidden="true" tabindex="-1"></a>        <span class="st">'https://webfs.oecd.org/pisa2022/STU_QQQ_SPSS.zip'</span>,</span>
+<span id="cb10-39"><a href="#cb10-39" aria-hidden="true" tabindex="-1"></a>        <span class="st">'https://webfs.oecd.org/pisa2022/TCH_QQQ_SPSS.zip'</span></span>
+<span id="cb10-40"><a href="#cb10-40" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Optional other files</span></span>
+<span id="cb10-41"><a href="#cb10-41" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 'https://webfs.oecd.org/pisa2022/STU_COG_SPSS.zip',</span></span>
+<span id="cb10-42"><a href="#cb10-42" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 'https://webfs.oecd.org/pisa2022/STU_TIM_SPSS.zip',</span></span>
+<span id="cb10-43"><a href="#cb10-43" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 'https://webfs.oecd.org/pisa2022/CRT_SPSS.zip',</span></span>
+<span id="cb10-44"><a href="#cb10-44" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 'https://webfs.oecd.org/pisa2022/FLT_SPSS.zip',</span></span>
+<span id="cb10-45"><a href="#cb10-45" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 'https://webfs.oecd.org/pisa2022/escs_trend.zip'</span></span>
+<span id="cb10-46"><a href="#cb10-46" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb10-47"><a href="#cb10-47" aria-hidden="true" tabindex="-1"></a>    <span class="at">dest =</span> <span class="fu">file.path</span>(path, <span class="st">'2022'</span>)</span>
+<span id="cb10-48"><a href="#cb10-48" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-49"><a href="#cb10-49" aria-hidden="true" tabindex="-1"></a>pisa2022_student <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="fu">file.path</span>(path, <span class="st">'2022'</span>, <span class="st">'CY08MSP_STU_QQQ.SAV'</span>))</span>
+<span id="cb10-50"><a href="#cb10-50" aria-hidden="true" tabindex="-1"></a>pisa2022_school <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="fu">file.path</span>(path, <span class="st">'2022'</span>, <span class="st">'CY08MSP_SCH_QQQ.SAV'</span>))</span>
+<span id="cb10-51"><a href="#cb10-51" aria-hidden="true" tabindex="-1"></a>pisa2022_teacher <span class="ot">&lt;-</span> haven<span class="sc">::</span><span class="fu">read_sav</span>(<span class="fu">file.path</span>(path, <span class="st">'2022'</span>, <span class="st">'CY08MSP_TCH_QQQ.SAV'</span>))</span>
+<span id="cb10-52"><a href="#cb10-52" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(pisa2022_student, pisa2022_school, pisa2022_teacher, <span class="at">file =</span> <span class="st">'data/pisa2022.rda'</span>) <span class="co"># You can use load() to read it back in</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 
 
@@ -961,9 +1292,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./textbooks.html" class="pagination-link" aria-label="Textbooks">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Textbooks</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./modules/intro_to_causality.html" class="pagination-link" aria-label="Introduction to Causality">
+        <span class="nav-page-text">Introduction to Causality</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://jbryer.github.io/DATA643-2027-Spring/edit/master/website/data.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://jbryer.github.io/DATA643-2027-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://jbryer.github.io/DATA643-2027-Spring/edit/master/website/data.qmd" class="toc-action"><i class="bi bi-git"></i>Edit this page</a></li><li><a href="https://jbryer.github.io/DATA643-2027-Spring/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

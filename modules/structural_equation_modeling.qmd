@@ -4,9 +4,18 @@ title: "Structural Equation Modeling"
 
 ## Readings
 
+We will be using the [`lavaann`](https://lavaan.ugent.be) R package to conduct SEM analysis in R.
+
+Yves Rosseel has published a [tutorial introducing the `lavaan` package](https://lavaan.ugent.be/tutorial.pdf).
 
 ## Assignments
 
 
 ## Supplemental Videos
+
+{{< video https://www.youtube.com/watch?v=bnPaxp3VOQM >}}
+
+{{< video https://www.youtube.com/watch?v=QP-v6RwsZjY&list=PLITf5JBUH0l4mQfk_mm3Locpx5ktLwnqS >}}
+
+{{< video https://www.youtube.com/watch?v=_tTPHt4cPwI >}}
 

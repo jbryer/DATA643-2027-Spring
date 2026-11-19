@@ -4,9 +4,19 @@ title: "Regression Discontinuity"
 
 ## Readings
 
+[Chapter 20 of *The Effect*](https://www.theeffectbook.net/ch-RegressionDiscontinuity.html)
 
 ## Assignments
 
 
 ## Supplemental Videos
 
+{{< video https://www.youtube.com/watch?v=gyq1hiAoidE >}}
+
+{{< video https://www.youtube.com/watch?v=5FM4-xbaS58 >}}
+
+{{< video https://www.youtube.com/watch?v=FPBQL0OKmI0 >}}
+
+{{< video https://www.youtube.com/watch?v=3HazJ8Tv6d0 >}}
+
+{{< video https://www.youtube.com/watch?v=WJ7j08xVegY >}}

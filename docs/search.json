@@ -26,7 +26,7 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "R and RStudio\n\nWe will make use of R, an open source statistics program and language. Be sure to install R and RStudio on your own computers within the first few days of the class.\n\nR - download for Windows, Mac, or Linux.\nRStudio - Download Windows, Mac, or Linux versions from here\n\nIf using Windows, you also need to download RTools.\n\n\nLaTeX\n\nLaTeX is a typesetting language for preparing documents. Documents are written in plain text files. Formatting the document is done using specific markup. If you have used HTML, the framework is similar however instead of using &lt;TAG&gt;&lt;/TAG&gt; syntax, LaTeX uses \\TAG{} format. We will primarily use Markdown, and its extension R Markdown for preparing documents in this class. However, when preparing PDF documents, the Markdown will first be converted to LaTeX before creating the PDF file. As such, a LaTeX converter is necessary. There are LaTeX installers for Windows (MiKTeX) and Mac (BasicTeX). Alternatively, the tinytex R package provides an easier way of installing LaTeX directly from within R:\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n\n\n\nR Packages\n\nOnce everything is installed, execute the following command in RStudio to install the packages we will use for this class (you can copy-and-paste):\n\nsource('https://github.com/jbryer/DATA643-2027-Spring/raw/refs/heads/master/R/setup.R')\n\nClick here to see the contents of the script.\n\n\nSource Control\nAll course materials will be made available on Github which provides an implementation of the git open source version control system. RStudio supports git directly. For more information, Jenny Bryan’s Happy Git and Github for the useR is a free online book covering the important features of source control for R users.",
+    "text": "R and RStudio\n\nWe will make use of R, an open source statistics program and language. Be sure to install R and RStudio on your own computers within the first few days of the class.\n\nR - download for Windows, Mac, or Linux.\nRStudio - Download Windows, Mac, or Linux versions from here\n\nIf using Windows, you also need to download RTools.\n\n\nLaTeX\n\nLaTeX is a typesetting language for preparing documents. Documents are written in plain text files. Formatting the document is done using specific markup. If you have used HTML, the framework is similar however instead of using &lt;TAG&gt;&lt;/TAG&gt; syntax, LaTeX uses \\TAG{} format. We will primarily use Markdown, and its extension R Markdown for preparing documents in this class. However, when preparing PDF documents, the Markdown will first be converted to LaTeX before creating the PDF file. As such, a LaTeX converter is necessary. There are LaTeX installers for Windows (MiKTeX) and Mac (BasicTeX). Alternatively, the tinytex R package provides an easier way of installing LaTeX directly from within R:\n\ninstall.packages('tinytex')\ntinytex::install_tinytex()\n\n\n\nR Packages\n\nOnce everything is installed, execute the following command in RStudio to install the packages we will use for this class (you can copy-and-paste):\n\nsource('https://github.com/jbryer/DATA643-2027-Spring/raw/refs/heads/master/R/setup.R')\n\nClick here to see the contents of the script.",
     "crumbs": [
       "Course information",
       "Software"
@@ -55,6 +55,28 @@
     ]
   },
   {
+    "objectID": "modules/structural_equation_modeling.html",
+    "href": "modules/structural_equation_modeling.html",
+    "title": "Structural Equation Modeling",
+    "section": "",
+    "text": "We will be using the lavaann R package to conduct SEM analysis in R.\nYves Rosseel has published a tutorial introducing the lavaan package.",
+    "crumbs": [
+      "Topics",
+      "Structural Equation Modeling"
+    ]
+  },
+  {
+    "objectID": "modules/structural_equation_modeling.html#readings",
+    "href": "modules/structural_equation_modeling.html#readings",
+    "title": "Structural Equation Modeling",
+    "section": "",
+    "text": "We will be using the lavaann R package to conduct SEM analysis in R.\nYves Rosseel has published a tutorial introducing the lavaan package.",
+    "crumbs": [
+      "Topics",
+      "Structural Equation Modeling"
+    ]
+  },
+  {
     "objectID": "modules/structural_equation_modeling.html#assignments",
     "href": "modules/structural_equation_modeling.html#assignments",
     "title": "Structural Equation Modeling",
@@ -74,6 +96,28 @@
     "crumbs": [
       "Topics",
       "Structural Equation Modeling"
+    ]
+  },
+  {
+    "objectID": "modules/propensity_score_analysis.html",
+    "href": "modules/propensity_score_analysis.html",
+    "title": "Propensity Score Analysis",
+    "section": "",
+    "text": "Rosenbaum, P.R. & Rubin, D.B. (1983). The central role of the propensity score in observational studies for causal effects. Biometrika 70(1), 41-55.\nChapter 1 of Applied Propensity Score Analysis with R\n\n\n\nChapter 14 of The Effect\n\n\n\nChapter 14 The Power of a Sensitivity Analysis and Its Limit from The Design of Observational Studies\nWe will use the rbounds and tipr packages this week.",
+    "crumbs": [
+      "Topics",
+      "Propensity Score Analysis"
+    ]
+  },
+  {
+    "objectID": "modules/propensity_score_analysis.html#readings",
+    "href": "modules/propensity_score_analysis.html#readings",
+    "title": "Propensity Score Analysis",
+    "section": "",
+    "text": "Rosenbaum, P.R. & Rubin, D.B. (1983). The central role of the propensity score in observational studies for causal effects. Biometrika 70(1), 41-55.\nChapter 1 of Applied Propensity Score Analysis with R\n\n\n\nChapter 14 of The Effect\n\n\n\nChapter 14 The Power of a Sensitivity Analysis and Its Limit from The Design of Observational Studies\nWe will use the rbounds and tipr packages this week.",
+    "crumbs": [
+      "Topics",
+      "Propensity Score Analysis"
     ]
   },
   {
@@ -99,6 +143,28 @@
     ]
   },
   {
+    "objectID": "modules/instrumental_variables.html",
+    "href": "modules/instrumental_variables.html",
+    "title": "Instrumental Variables",
+    "section": "",
+    "text": "Chapter 19 of The Effect\nImbens, G.W. & Angrist, J.D. (1994). Identification and estimation of local average treatment effects. Econometrica, 62(2). 467-475.\nGetting started with estimatr\nComplier average treatment effects - This is a nice introduction to using instrumental variables to estimate Complier Average Causal Effects (CACE; also referred to as Local Average Treatment Effect). CACE is often used in RCTs when their is a lack of compliance to the randomization assignment.\nTechnical Methods Report: Estimation and Identification of the Complier Average Causal Effect Parameter in Education RCTs",
+    "crumbs": [
+      "Topics",
+      "Instrumental Variables"
+    ]
+  },
+  {
+    "objectID": "modules/instrumental_variables.html#readings",
+    "href": "modules/instrumental_variables.html#readings",
+    "title": "Instrumental Variables",
+    "section": "",
+    "text": "Chapter 19 of The Effect\nImbens, G.W. & Angrist, J.D. (1994). Identification and estimation of local average treatment effects. Econometrica, 62(2). 467-475.\nGetting started with estimatr\nComplier average treatment effects - This is a nice introduction to using instrumental variables to estimate Complier Average Causal Effects (CACE; also referred to as Local Average Treatment Effect). CACE is often used in RCTs when their is a lack of compliance to the randomization assignment.\nTechnical Methods Report: Estimation and Identification of the Complier Average Causal Effect Parameter in Education RCTs",
+    "crumbs": [
+      "Topics",
+      "Instrumental Variables"
+    ]
+  },
+  {
     "objectID": "modules/instrumental_variables.html#assignments",
     "href": "modules/instrumental_variables.html#assignments",
     "title": "Instrumental Variables",
@@ -114,7 +180,7 @@
     "href": "modules/instrumental_variables.html#supplemental-videos",
     "title": "Instrumental Variables",
     "section": "Supplemental Videos",
-    "text": "Supplemental Videos",
+    "text": "Supplemental Videos\nThe Basics of Instrumental Variable (IV) Estimation in 15\n\nInstrumental Variables (ep 57) \nInstrumental Variable Validity (ep 58) \nEstimating Instrumental Variables (ep 59) \nTesting Instrumental Variables Assumptions (ep 60) \nDefining LATE: The Local Average Treatment Effect: Causal Inference Bootcamp \nComputing Late, Part 2: Finding Compliers: Causal Inference Bootcamp \nTwo Stage Least Squares (2SLS)",
     "crumbs": [
       "Topics",
       "Instrumental Variables"
@@ -156,44 +222,112 @@
   {
     "objectID": "data.html",
     "href": "data.html",
-    "title": "Dataset",
+    "title": "Datasets",
     "section": "",
-    "text": "This page lists some of the datasets we will use in this course. You can add datasets you find to this page by clicking “Edit this page” at the bottom and submitting a pull request."
+    "text": "This page lists some of the datasets we will use in this course. You can add datasets you find to this page by clicking “Edit this page” at the bottom and submitting a pull request.",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
   },
   {
     "objectID": "data.html#national-medical-expenditure-study",
     "href": "data.html#national-medical-expenditure-study",
-    "title": "Dataset",
+    "title": "Datasets",
     "section": "National Medical Expenditure Study",
-    "text": "National Medical Expenditure Study\nResults from the 1987 National Medical Expenditure Study\n\ndata(nmes, package = 'TriMatch')"
+    "text": "National Medical Expenditure Study\nResults from the 1987 National Medical Expenditure Study\n\ndata(nmes, package = 'TriMatch')",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
   },
   {
     "objectID": "data.html#effects-of-tutoring-services-on-course-grades",
     "href": "data.html#effects-of-tutoring-services-on-course-grades",
-    "title": "Dataset",
+    "title": "Datasets",
     "section": "Effects of tutoring services on course grades",
-    "text": "Effects of tutoring services on course grades\nResults from a study examining the effects of tutoring services on course grades. This is the dataset that inspired the TriMatch package for making matched triplets (i.e. three groups, two treatments, one control).\n\ndata(tutoring, package = 'TriMatch')"
+    "text": "Effects of tutoring services on course grades\nResults from a study examining the effects of tutoring services on course grades. This is the dataset that inspired the TriMatch package for making matched triplets (i.e. three groups, two treatments, one control).\n\ndata(tutoring, package = 'TriMatch')",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
   },
   {
     "objectID": "data.html#the-trends-in-international-mathematics-and-science-study-timss",
     "href": "data.html#the-trends-in-international-mathematics-and-science-study-timss",
-    "title": "Dataset",
+    "title": "Datasets",
     "section": "The Trends in International Mathematics and Science Study (TIMSS)",
-    "text": "The Trends in International Mathematics and Science Study (TIMSS)\nThe Trends in International Mathematics and Science Study (TIMSS) provides reliable and timely trend data on the mathematics and science achievement of U.S. students compared to that of students in other countries. TIMSS data have been collected from students at grades 4 and 8 every 4 years since 1995, with the United States participating in every administration of TIMSS. TIMSS Advanced studies the achievement in advanced mathematics and physics of students in their final year of secondary school. It has been conducted in 1995, 2008, and 2015, with the United States participating in 1995 and 2015. TIMSS and TIMSS Advanced are sponsored by the International Association for the Evaluation of Educational Achievement (IEA) and conducted in the United States by the National Center for Education Statistics (NCES).\n\nEdSurvey::downloadTIMSS(root = \"data/\", years = c(2019), cache = TRUE, verbose = TRUE)\ntimss &lt;- EdSurvey::readTIMSS(path = 'data/TIMSS/2019/', countries = 'USA', gradeLvl = '8')"
-  },
-  {
-    "objectID": "data.html#programme-of-international-student-assessment-pisa",
-    "href": "data.html#programme-of-international-student-assessment-pisa",
-    "title": "Dataset",
-    "section": "Programme of International Student Assessment (PISA)",
-    "text": "Programme of International Student Assessment (PISA)\nPISA is the OECD’s Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.\n\nEdSurvey::downloadPISA(years = 2018, database = \"INT\", root = \"data/\")\npisa &lt;- EdSurvey::readPISA(path = \"data/PISA/2018\", countries = \"USA\")\n\nThe EdSurvey package only goes to 2018. Data for 2022 and 2025 are available on the OEC website.\n\npath &lt;- 'data/PISA/'\npisa_files &lt;- c(\n    # 2025\n    'https://webfs.oecd.org/pisa2022/2025/CY09_MS_SCH_PUF.zip',\n    'https://webfs.oecd.org/pisa2022/2025/CY09_MS_STU_PUF.zip',\n    'https://webfs.oecd.org/pisa2022/2025/CY09_MS_TCH_PUF.zip',\n    'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PUF.zip',\n    'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PROCESS_PUF.zip',\n    # 2022\n    'https://webfs.oecd.org/pisa2018/SPSS_STU_QQQ.zip',\n    'https://webfs.oecd.org/pisa2018/SPSS_SCH_QQQ.zip',\n    'https://webfs.oecd.org/pisa2018/SPSS_TCH_QQQ.zip',\n    'https://webfs.oecd.org/pisa2018/SPSS_STU_COG.zip',\n    'https://webfs.oecd.org/pisa2018/SPSS_STU_TIM.zip',\n    'https://webfs.oecd.org/pisa2018/SPSS_STU_FLT.zip'\n)"
+    "text": "The Trends in International Mathematics and Science Study (TIMSS)\nThe Trends in International Mathematics and Science Study (TIMSS) provides reliable and timely trend data on the mathematics and science achievement of U.S. students compared to that of students in other countries. TIMSS data have been collected from students at grades 4 and 8 every 4 years since 1995, with the United States participating in every administration of TIMSS. TIMSS Advanced studies the achievement in advanced mathematics and physics of students in their final year of secondary school. It has been conducted in 1995, 2008, and 2015, with the United States participating in 1995 and 2015. TIMSS and TIMSS Advanced are sponsored by the International Association for the Evaluation of Educational Achievement (IEA) and conducted in the United States by the National Center for Education Statistics (NCES).\n\nEdSurvey::downloadTIMSS(root = \"data/\", years = c(2019), cache = TRUE, verbose = TRUE)\ntimss &lt;- EdSurvey::readTIMSS(path = 'data/TIMSS/2019/', countries = 'USA', gradeLvl = '8')",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
   },
   {
     "objectID": "data.html#effects-of-bed-nets",
     "href": "data.html#effects-of-bed-nets",
-    "title": "Dataset",
+    "title": "Datasets",
     "section": "Effects of bed nets",
-    "text": "Effects of bed nets\nSee https://evalsp21.classes.andrewheiss.com/example/cace/ for more information on this dataset.\n\nbed_nets &lt;- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv')\nbed_nets_time_machine &lt;- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv')"
+    "text": "Effects of bed nets\nSee https://evalsp21.classes.andrewheiss.com/example/cace/ for more information on this dataset.\n\nbed_nets &lt;- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv')\nbed_nets_time_machine &lt;- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv')",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
+  },
+  {
+    "objectID": "data.html#causaldata-r-package",
+    "href": "data.html#causaldata-r-package",
+    "title": "Datasets",
+    "section": "causaldata R package",
+    "text": "causaldata R package\nThe causaldata R package contains a number of datasets from the books The Effect, Causal Inference: The Mixtape, and Causal Inference: What If?.\n\ncausaldata_tables &lt;- data(package = 'causaldata')\nknitr::kable(causaldata_tables$results[,c('Item', 'Title')], row.names = FALSE)\n\n\n\n\n\n\n\n\nItem\nTitle\n\n\n\n\nMroz\nU.S. Women’s Labor-Force Participation\n\n\nabortion\nData on abortion legalization and sexually transmitted infections\n\n\nadult_services\nData from a survey of internet-mediated sex workers\n\n\nauto\nAutomobile data from Stata\n\n\navocado\nData on avocado sales\n\n\nblack_politicians\nData from “Black Politicians are More Intrinsically Motivated to Advance Blacks’ Interests”\n\n\ncastle\nData on castle-doctrine statutes and violent crime\n\n\nccdrug\nData on Drug Arrests from the Crown Court Sentencing Survey\n\n\nclose_college\nData from Card (1995) to estimate the effect of college education on earnings\n\n\nclose_elections_lmb\nA close-elections regression discontinuity study from Lee, Moretti, and Butler (2004)\n\n\ncps_mixtape\nObservational counterpart to nsw_mixtape data\n\n\ncredit_cards\nData on Taiwanese Credit Card Holders\n\n\ngapminder\nGapminder data\n\n\ngoogle_stock\nGoogle Stock Data\n\n\ngov_transfers\nData from “Government Transfers and Political Support”\n\n\ngov_transfers_density\nData from “Government Transfers and Political Support” for Density Tests\n\n\ngreek_data\nData from a fictional randomized heart transplant study\n\n\nmortgages\nData from “How do Mortgage Subsidies Affect Home Ownership? Evidence from the Mid-Century GI Bills”\n\n\nnhefs\nNational Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study\n\n\nnhefs_codebook\nNHEFS Codebook\n\n\nnhefs_complete\nComplete-Data National Health and Nutrition Examination Survey Data I Epidemiologic Follow-up Study\n\n\nnsw_mixtape\nData from the National Supported Work Demonstration (NSW) job-training program\n\n\norgan_donations\nOrgan Donation Data\n\n\nrestaurant_inspections\nData on Restaurant Inspections\n\n\nri\nA simple simulated data set for calculating p-values\n\n\nscorecard\nEarnings and Loan Repayment in US Four-Year Colleges\n\n\nsnow\nData from John Snow’s 1855 study of the cause of cholera\n\n\nsocial_insure\nData from “Social Networks and the Decision to Insure”\n\n\ntexas\nData on prison capacity expansion in Texas\n\n\nthornton_hiv\nData from HIV information experiment in Thornton (2008)\n\n\ntitanic\nData from the sinking of the Titanic\n\n\ntraining_bias_reduction\nSimulated data from a job training program for a bias reduction method\n\n\ntraining_example\nSimulated data from a job training program\n\n\nyule\nData on 19th century English Poverty from Yule (1899)",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
+  },
+  {
+    "objectID": "data.html#forcausality-r-package",
+    "href": "data.html#forcausality-r-package",
+    "title": "Datasets",
+    "section": "ForCausality R package",
+    "text": "ForCausality R package\nProvides a comprehensive set of datasets and tools for ‘causal inference’ research. The package includes data from clinical trials, cancer studies, epidemiological surveys, environmental exposures, and health-related observational studies. Designed to facilitate causal analysis, risk assessment, and advanced statistical modeling, it leverages datasets from packages such as ‘causalOT’, ‘survival’, ‘causalPAF’, ‘evident’, ‘melt’, and ‘sanon’.\n\nForCausality_tables &lt;- data(package = 'ForCausality')\nknitr::kable(ForCausality_tables$results[,c('Item', 'Title')], row.names = FALSE)\n\n\n\n\n\n\n\n\nItem\nTitle\n\n\n\n\nBenzene_df\nBenzene Exposure and Chromosome Damage Data\n\n\nCloth_df\nClothianidin Concentration in Maize Plants\n\n\nColon_df\nChemotherapy Data for Stage B/C Colon Cancer\n\n\nGbsg_df\nBreast Cancer Prognostic Data (German Breast Cancer Study Group)\n\n\nLead_df\nLead Exposure Data\n\n\nMouse_df\nMouse Cancer Trial Data\n\n\nPain_df\nChronic Pain Clinical Trial Data\n\n\nPeriodontal_df\nPeriodontal Disease Data\n\n\nPph_df\nExternal Control Trial Data for Post-partum Hemorrhage\n\n\nResp_df\nRespiratory Disorder Clinical Trial Data\n\n\nRotterdam_df\nBreast Cancer Prognostic Data (Rotterdam Study)\n\n\nSebor_df\nSeborrheic Dermatitis Clinical Trial Data\n\n\nSkin_df\nSkin Condition Clinical Trial Data\n\n\nSmokeH_df\nSmoking and Homocysteine Data\n\n\nStroke_df\nIschemic Stroke Case-Control Data\n\n\nThiam_df\nThiamethoxam Application and Crop Yield Data\n\n\nUdca_df\nUrsodeoxycholic Acid Trial Data",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
+  },
+  {
+    "objectID": "data.html#gerber-and-green-dataset-used-by-imai",
+    "href": "data.html#gerber-and-green-dataset-used-by-imai",
+    "title": "Datasets",
+    "section": "Gerber and Green Dataset used by Imai",
+    "text": "Gerber and Green Dataset used by Imai\nThis is a classic dataset used to show propensity score analysis, however if you read the following articles you will see there is much debate about the analyses conducted by Gerber and Donald as well as Imai.\nGerber A.S. & Donald, P.G. (2000). The effects of personal canvassing, telephone calls, and direct mail on voter turnout: A field experiment. American Political Science Review, 94(3), 653– 64.\nImai, K. (2005). Do get-out-the-vote calls reduce turnout? The importance of statistical methods for field experiments. American Political Science Review, 99(2), 283– 300.\nGerber, A.S. & Donald P.G. (2005). Correction to Gerber and Green (2000), replication of disputed findings, and reply to Imai (2005). American Political Science Review, 99(2), 301-13.\n\ndata(GerberGreenImai, package = 'Matching')",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
+  },
+  {
+    "objectID": "data.html#linked-birthinfant-death-cohort-data",
+    "href": "data.html#linked-birthinfant-death-cohort-data",
+    "title": "Datasets",
+    "section": "Linked Birth/Infant Death Cohort Data",
+    "text": "Linked Birth/Infant Death Cohort Data\nData on twins from the National Bureau of Economic Research. These data are based on this paper:\nAlmond, D., Chay, K.Y, & Lee, D.S. (2005). The costs of low birth weight. The Quarterly Journal of Economics, 120(3), 1031-1083.\n\ndata(twins, package = 'psa')",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
+  },
+  {
+    "objectID": "data.html#programme-of-international-student-assessment-pisa",
+    "href": "data.html#programme-of-international-student-assessment-pisa",
+    "title": "Datasets",
+    "section": "Programme of International Student Assessment (PISA)",
+    "text": "Programme of International Student Assessment (PISA)\nPISA is the OECD’s Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.\n\n# Years available using the EdSurvey package: 2000 2003 2006 2009 2012 2015 2018\nEdSurvey::downloadPISA(years = 2018, database = \"INT\", root = \"data/\")\npisa2018 &lt;- EdSurvey::readPISA(path = \"data/PISA/2018\", countries = \"USA\")\n\nThe EdSurvey package only goes to 2018. Data for 2022 and 2025 are available on the OEC website.\n\npath &lt;- 'data/PISA/'\n\n#' Download zip files from urls\ndownload_zip_files &lt;- function(urls, dest, keep_zip = FALSE) {\n    dir.create(dest, recursive = TRUE)\n    for(i in urls) {\n        dest_file &lt;- file.path(dest, basename(i))\n        download.file(i, dest_file)\n        unzip(dest_file, exdir = dest)\n        if(!keep_zip) {\n            unlink(dest_file)\n        }\n    }\n}\n\n# 2025 PISA\ndownload_zip_files(\n    urls = c(\n        'https://webfs.oecd.org/pisa2022/2025/CY09_MS_SCH_PUF.zip',\n        'https://webfs.oecd.org/pisa2022/2025/CY09_MS_STU_PUF.zip',\n        'https://webfs.oecd.org/pisa2022/2025/CY09_MS_TCH_PUF.zip'\n        # Optional other files\n        # 'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PUF.zip',\n        # 'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PROCESS_PUF.zip'\n    ),\n    dest = file.path(path, '2025')\n)\n# You will have to load and merge the data frames manually\npisa2025_student &lt;- haven::read_sav(file.path(path, '2025', 'CY09_MS_SCH_PUF.SAV'))\npisa2025_school &lt;- haven::read_sav(file.path(path, '2025', 'CY09_MS_SCH_PUF.SAV'))\npisa2025_teacher &lt;- haven::read_sav(file.path(path, '2025', 'CY09_MS_TCH_PUF.sav'))\nsave(pisa2025_student, pisa2025_school, pisa2025_teacher, file = 'data/pisa2025.rda') # You can use load() to read it back in\n\n# 2022 PISA\ndownload_zip_files(\n    urls = c(\n        'https://webfs.oecd.org/pisa2022/SCH_QQQ_SPSS.zip',\n        'https://webfs.oecd.org/pisa2022/STU_QQQ_SPSS.zip',\n        'https://webfs.oecd.org/pisa2022/TCH_QQQ_SPSS.zip'\n        # Optional other files\n        # 'https://webfs.oecd.org/pisa2022/STU_COG_SPSS.zip',\n        # 'https://webfs.oecd.org/pisa2022/STU_TIM_SPSS.zip',\n        # 'https://webfs.oecd.org/pisa2022/CRT_SPSS.zip',\n        # 'https://webfs.oecd.org/pisa2022/FLT_SPSS.zip',\n        # 'https://webfs.oecd.org/pisa2022/escs_trend.zip'\n    ),\n    dest = file.path(path, '2022')\n)\npisa2022_student &lt;- haven::read_sav(file.path(path, '2022', 'CY08MSP_STU_QQQ.SAV'))\npisa2022_school &lt;- haven::read_sav(file.path(path, '2022', 'CY08MSP_SCH_QQQ.SAV'))\npisa2022_teacher &lt;- haven::read_sav(file.path(path, '2022', 'CY08MSP_TCH_QQQ.SAV'))\nsave(pisa2022_student, pisa2022_school, pisa2022_teacher, file = 'data/pisa2022.rda') # You can use load() to read it back in",
+    "crumbs": [
+      "Course information",
+      "Datasets"
+    ]
   },
   {
     "objectID": "index.html",
@@ -228,6 +362,28 @@
     ]
   },
   {
+    "objectID": "modules/difference_in_differences.html",
+    "href": "modules/difference_in_differences.html",
+    "title": "Difference in Differences",
+    "section": "",
+    "text": "Chapter 18 of The Effect",
+    "crumbs": [
+      "Topics",
+      "Difference in Differences"
+    ]
+  },
+  {
+    "objectID": "modules/difference_in_differences.html#readings",
+    "href": "modules/difference_in_differences.html#readings",
+    "title": "Difference in Differences",
+    "section": "",
+    "text": "Chapter 18 of The Effect",
+    "crumbs": [
+      "Topics",
+      "Difference in Differences"
+    ]
+  },
+  {
     "objectID": "modules/difference_in_differences.html#assignments",
     "href": "modules/difference_in_differences.html#assignments",
     "title": "Difference in Differences",
@@ -250,11 +406,33 @@
     ]
   },
   {
+    "objectID": "modules/intro_to_causality.html",
+    "href": "modules/intro_to_causality.html",
+    "title": "Introduction to Causality",
+    "section": "",
+    "text": "Wang, L., Richardson, T.S., & Robins, J.M. (2026). Causal Inference A Tale of Three Frameworks. Journal of Data Science 24(1), 53-85\nWhat Works Clearinghouse: Procedures and Standards Handbook Version 5 - Focus on chapter 3 for this week.",
+    "crumbs": [
+      "Topics",
+      "Introduction to Causality"
+    ]
+  },
+  {
+    "objectID": "modules/intro_to_causality.html#readings",
+    "href": "modules/intro_to_causality.html#readings",
+    "title": "Introduction to Causality",
+    "section": "",
+    "text": "Wang, L., Richardson, T.S., & Robins, J.M. (2026). Causal Inference A Tale of Three Frameworks. Journal of Data Science 24(1), 53-85\nWhat Works Clearinghouse: Procedures and Standards Handbook Version 5 - Focus on chapter 3 for this week.",
+    "crumbs": [
+      "Topics",
+      "Introduction to Causality"
+    ]
+  },
+  {
     "objectID": "modules/intro_to_causality.html#assignments",
     "href": "modules/intro_to_causality.html#assignments",
     "title": "Introduction to Causality",
     "section": "Assignments",
-    "text": "Assignments",
+    "text": "Assignments\nFind a journal article that uses a randomized control trial as its primary research method. Critique the implementation using the What Works Clearinghouse standards.",
     "crumbs": [
       "Topics",
       "Introduction to Causality"
@@ -269,6 +447,28 @@
     "crumbs": [
       "Topics",
       "Introduction to Causality"
+    ]
+  },
+  {
+    "objectID": "modules/regression_dicontinuity.html",
+    "href": "modules/regression_dicontinuity.html",
+    "title": "Regression Discontinuity",
+    "section": "",
+    "text": "Chapter 20 of The Effect",
+    "crumbs": [
+      "Topics",
+      "Regression Discontinuity"
+    ]
+  },
+  {
+    "objectID": "modules/regression_dicontinuity.html#readings",
+    "href": "modules/regression_dicontinuity.html#readings",
+    "title": "Regression Discontinuity",
+    "section": "",
+    "text": "Chapter 20 of The Effect",
+    "crumbs": [
+      "Topics",
+      "Regression Discontinuity"
     ]
   },
   {
@@ -305,7 +505,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses.\nWe will have meetups on r evenings at r. Click here to join the meetup.\nMeetups will be recorded and made available the next day on the course website. Although attending live is not strictly required, I expect everyone to watch the lectures during the week. I use the class meetups to convey important information and announcements. Very often I will cover some topics not in the textbook. Students who attend the meetups tend to do well on the assignments.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nStartTime\nTopic\nPrepare\nLab\nLink\nVideo\nSlides\n\n\n\n\n1\n2027-02-01\n\nIntroduction to Causality\n\n\n\n\n\n\n\n\n\n\n\n2\n2027-02-08\n\nDesigning Studies for Causaility\n\n\n\n\n\n\n\n\n\n\n\n3\n2027-02-15\n\nPropensity Score Analysis\n\n\n\n\n\n\n\n\n\n\n\n4\n2027-02-22\n\nPropensity Score Matching\n\n\n\n\n\n\n\n\n\n\n\n5\n2027-03-01\n\nSensitivity Analysis\n\n\n\n\n\n\n\n\n\n\n\n6\n2027-03-08\n\nExtensions of PSA\n\n\n\n\n\n\n\n\n\n\n\n7\n2027-03-15\n\nCausal Diagrams (DAGs)\n\n\n\n\n\n\n\n\n\n\n\n8\n2027-03-22\n\nStructural Equation Modeling\n\n\n\n\n\n\n\n\n\n\n\n9\n2027-03-29\n\nCausal Machine Learning\n\n\n\n\n\n\n\n\n\n\n\n10\n2027-04-05\n\nDifference-in-differences\n\n\n\n\n\n\n\n\n\n\n\n11\n2027-04-12\n\nInstrumental Variables\n\n\n\n\n\n\n\n\n\n\n\n12\n2027-04-19\n\nRegression Discontinuity\n\n\n\n\n\n\n\n\n\n\n\n\n2027-04-26\n\nSPRING BREAK - NO CLASS\n\n\n\n\n\n\n\n13\n2027-05-03\n\nPresentations\n\n\n\n\n\n\n\n14\n2027-05-10\n\nPresentations - Final Meetup",
+    "text": "This page contains an outline of the topics, content, and assignments for the semester. Note that this schedule will be updated as the semester progresses.\nWe will have meetups on TBD at TBD. Click here to join the meetup.\nMeetups will be recorded and made available the next day on the course website. Although attending live is not strictly required, I expect everyone to watch the lectures during the week. I use the class meetups to convey important information and announcements. Very often I will cover some topics not in the textbook. Students who attend the meetups tend to do well on the assignments.\n\n\n\n\n\n\n\n\n\n\n\n\n\nWeek\nDate\nTopic\nPrepare\nLab\nVideo\nSlides\n\n\n\n\n1\n2027-02-01\nIntroduction to Causality\n\n\n\n\n\n\n\n\n\n\n2\n2027-02-08\nDesigning Studies for Causaility\n\n\n\n\n\n\n\n\n\n\n3\n2027-02-15\nPropensity Score Analysis\n\n\n\n\n\n\n\n\n\n\n4\n2027-02-22\nPropensity Score Matching\n\n\n\n\n\n\n\n\n\n\n5\n2027-03-01\nSensitivity Analysis\n\n\n\n\n\n\n\n\n\n\n6\n2027-03-08\nExtensions of PSA\n\n\n\n\n\n\n\n\n\n\n7\n2027-03-15\nCausal Diagrams (DAGs)\n\n\n\n\n\n\n\n\n\n\n8\n2027-03-22\nStructural Equation Modeling\n\n\n\n\n\n\n\n\n\n\n9\n2027-03-29\nCausal Machine Learning\n\n\n\n\n\n\n\n\n\n\n10\n2027-04-05\nDifference-in-differences\n\n\n\n\n\n\n\n\n\n\n11\n2027-04-12\nInstrumental Variables\n\n\n\n\n\n\n\n\n\n\n12\n2027-04-19\nRegression Discontinuity\n\n\n\n\n\n\n\n\n\n\n\n2027-04-26\nSPRING BREAK - NO CLASS\n\n\n\n\n\n\n13\n2027-05-03\nPresentations\n\n\n\n\n\n\n14\n2027-05-10\nPresentations - Final Meetup",
     "crumbs": [
       "Schedule"
     ]

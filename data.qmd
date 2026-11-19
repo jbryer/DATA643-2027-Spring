@@ -1,5 +1,9 @@
 ---
-title: "Dataset"
+title: "Datasets"
+format: 
+  html:
+    toc: true
+    toc-title: "Datasets"
 editor_options: 
   chunk_output_type: console
 ---
@@ -31,37 +35,6 @@ EdSurvey::downloadTIMSS(root = "data/", years = c(2019), cache = TRUE, verbose =
 timss <- EdSurvey::readTIMSS(path = 'data/TIMSS/2019/', countries = 'USA', gradeLvl = '8')
 ```
 
-## Programme of International Student Assessment (PISA)
-
-[PISA](https://www.oecd.org/en/about/programmes/pisa.html) is the OECD's Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.
-
-```{r, eval=FALSE}
-EdSurvey::downloadPISA(years = 2018, database = "INT", root = "data/")
-pisa <- EdSurvey::readPISA(path = "data/PISA/2018", countries = "USA")
-```
-
-The `EdSurvey` package only goes to 2018. Data for [2022](https://webfs.oecd.org/pisa2022/index.html#section1) and [2025](https://webfs.oecd.org/pisa2022/index.html#section0) are available on the [OEC website](https://www.oecd.org/en/about/programmes/pisa.html).
-
-```{r, eval=FALSE}
-path <- 'data/PISA/'
-pisa_files <- c(
-	# 2025
-	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_SCH_PUF.zip',
-	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_STU_PUF.zip',
-	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_TCH_PUF.zip',
-	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PUF.zip',
-	'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PROCESS_PUF.zip',
-	# 2022
-	'https://webfs.oecd.org/pisa2018/SPSS_STU_QQQ.zip',
-	'https://webfs.oecd.org/pisa2018/SPSS_SCH_QQQ.zip',
-	'https://webfs.oecd.org/pisa2018/SPSS_TCH_QQQ.zip',
-	'https://webfs.oecd.org/pisa2018/SPSS_STU_COG.zip',
-	'https://webfs.oecd.org/pisa2018/SPSS_STU_TIM.zip',
-	'https://webfs.oecd.org/pisa2018/SPSS_STU_FLT.zip'
-)
-
-```
-
 
 ## Effects of bed nets
 
@@ -70,4 +43,115 @@ See https://evalsp21.classes.andrewheiss.com/example/cace/ for more information 
 ```{r, eval=FALSE}
 bed_nets <- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_observed.csv')
 bed_nets_time_machine <- read.csv('https://evalsp21.classes.andrewheiss.com/data/bed_nets_time_machine.csv')
+```
+
+
+## `causaldata` R package
+
+The [`causaldata`](https://github.com/nickch-k/causaldata) R package contains a number of datasets from the books [*The Effect*](https://theeffectbook.net/), [*Causal Inference: The Mixtape*](https://mixtape.scunning.com/index.html), and [*Causal Inference: What If?*](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/).
+
+```{r}
+causaldata_tables <- data(package = 'causaldata')
+knitr::kable(causaldata_tables$results[,c('Item', 'Title')], row.names = FALSE)
+```
+
+## `ForCausality` R package
+
+Provides a comprehensive set of datasets and tools for 'causal inference' research. The package includes data from clinical trials, cancer studies, epidemiological surveys, environmental exposures, and health-related observational studies. Designed to facilitate causal analysis, risk assessment, and advanced statistical modeling, it leverages datasets from packages such as 'causalOT', 'survival', 'causalPAF', 'evident', 'melt', and 'sanon'. 
+
+```{r}
+ForCausality_tables <- data(package = 'ForCausality')
+knitr::kable(ForCausality_tables$results[,c('Item', 'Title')], row.names = FALSE)
+```
+
+## Gerber and Green Dataset used by Imai
+
+This is a classic dataset used to show propensity score analysis, however if you read the following articles you will see there is much debate about the analyses conducted by Gerber and Donald as well as Imai.
+
+Gerber A.S. & Donald, P.G. (2000). The effects of personal canvassing, telephone calls, and direct mail on voter turnout: A field experiment. *American Political Science Review, 94*(3), 653– 64.
+
+Imai, K. (2005). Do get-out-the-vote calls reduce turnout? The importance of statistical methods for field experiments. *American Political Science Review, 99*(2), 283– 300.
+
+Gerber, A.S. & Donald P.G. (2005). Correction to Gerber and Green (2000), replication of disputed findings, and reply to Imai (2005). *American Political Science Review, 99*(2), 301-13.
+
+```{r, eval=FALSE}
+data(GerberGreenImai, package = 'Matching')
+```
+
+## Linked Birth/Infant Death Cohort Data
+
+Data on twins from the [National Bureau of Economic Research](https://www.nber.org/research/data/linked-birthinfant-death-cohort-data). These data are based on this paper:
+
+Almond, D., Chay, K.Y, & Lee, D.S. (2005). The costs of low birth weight. *The Quarterly Journal of Economics, 120*(3), 1031-1083.
+
+```{r, eval=FALSE}
+data(twins, package = 'psa')
+```
+
+
+## Programme of International Student Assessment (PISA)
+
+[PISA](https://www.oecd.org/en/about/programmes/pisa.html) is the OECD's Programme for International Student Assessment. PISA measures 15-year-olds’ ability to use their reading, mathematics and science knowledge and skills to meet real-life challenges.
+
+```{r, eval=FALSE}
+# Years available using the EdSurvey package: 2000 2003 2006 2009 2012 2015 2018
+EdSurvey::downloadPISA(years = 2018, database = "INT", root = "data/")
+pisa2018 <- EdSurvey::readPISA(path = "data/PISA/2018", countries = "USA")
+```
+
+The `EdSurvey` package only goes to 2018. Data for [2022](https://webfs.oecd.org/pisa2022/index.html#section1) and [2025](https://webfs.oecd.org/pisa2022/index.html#section0) are available on the [OEC website](https://www.oecd.org/en/about/programmes/pisa.html).
+
+```{r, eval=FALSE}
+path <- 'data/PISA/'
+
+#' Download zip files from urls
+download_zip_files <- function(urls, dest, keep_zip = FALSE) {
+	dir.create(dest, recursive = TRUE)
+	for(i in urls) {
+		dest_file <- file.path(dest, basename(i))
+		download.file(i, dest_file)
+		unzip(dest_file, exdir = dest)
+		if(!keep_zip) {
+			unlink(dest_file)
+		}
+	}
+}
+
+# 2025 PISA
+download_zip_files(
+	urls = c(
+		'https://webfs.oecd.org/pisa2022/2025/CY09_MS_SCH_PUF.zip',
+		'https://webfs.oecd.org/pisa2022/2025/CY09_MS_STU_PUF.zip',
+		'https://webfs.oecd.org/pisa2022/2025/CY09_MS_TCH_PUF.zip'
+		# Optional other files
+		# 'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PUF.zip',
+		# 'https://webfs.oecd.org/pisa2022/2025/CY09_MS_COG_PROCESS_PUF.zip'
+	),
+	dest = file.path(path, '2025')
+)
+# You will have to load and merge the data frames manually
+pisa2025_student <- haven::read_sav(file.path(path, '2025', 'CY09_MS_SCH_PUF.SAV'))
+pisa2025_school <- haven::read_sav(file.path(path, '2025', 'CY09_MS_SCH_PUF.SAV'))
+pisa2025_teacher <- haven::read_sav(file.path(path, '2025', 'CY09_MS_TCH_PUF.sav'))
+save(pisa2025_student, pisa2025_school, pisa2025_teacher, file = 'data/pisa2025.rda') # You can use load() to read it back in
+
+# 2022 PISA
+download_zip_files(
+	urls = c(
+		'https://webfs.oecd.org/pisa2022/SCH_QQQ_SPSS.zip',
+		'https://webfs.oecd.org/pisa2022/STU_QQQ_SPSS.zip',
+		'https://webfs.oecd.org/pisa2022/TCH_QQQ_SPSS.zip'
+		# Optional other files
+		# 'https://webfs.oecd.org/pisa2022/STU_COG_SPSS.zip',
+		# 'https://webfs.oecd.org/pisa2022/STU_TIM_SPSS.zip',
+		# 'https://webfs.oecd.org/pisa2022/CRT_SPSS.zip',
+		# 'https://webfs.oecd.org/pisa2022/FLT_SPSS.zip',
+		# 'https://webfs.oecd.org/pisa2022/escs_trend.zip'
+	),
+	dest = file.path(path, '2022')
+)
+pisa2022_student <- haven::read_sav(file.path(path, '2022', 'CY08MSP_STU_QQQ.SAV'))
+pisa2022_school <- haven::read_sav(file.path(path, '2022', 'CY08MSP_SCH_QQQ.SAV'))
+pisa2022_teacher <- haven::read_sav(file.path(path, '2022', 'CY08MSP_TCH_QQQ.SAV'))
+save(pisa2022_student, pisa2022_school, pisa2022_teacher, file = 'data/pisa2022.rda') # You can use load() to read it back in
 ```

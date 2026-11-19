@@ -106,6 +106,8 @@ website:
             text: "Software"
           - href: textbooks.qmd
             text: "Textbooks"
+          - href: data.qmd
+            text: "Datasets"
       - section: "Topics"
         contents:
           - href: modules/intro_to_causality.qmd

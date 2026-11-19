@@ -39,6 +39,3 @@ source('https://github.com/jbryer/DATA643-2027-Spring/raw/refs/heads/master/R/se
 
 [Click here](https://github.com/jbryer/DATA643-2027-Spring/raw/refs/heads/master/R/setup.R) to see the contents of the script.
 
-### Source Control
-
-All course materials will be made available on [Github](https://github.com/jbryer/IS381/) which provides an implementation of the [git](https://git-scm.com/) open source version control system. RStudio supports git directly. For more information, Jenny Bryan's [*Happy Git and Github for the useR*](https://happygitwithr.com/) is a free online book covering the important features of source control for R users.

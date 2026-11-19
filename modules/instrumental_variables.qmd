@@ -4,9 +4,43 @@ title: "Instrumental Variables"
 
 ## Readings
 
+* [Chapter 19 of *The Effect*](https://www.theeffectbook.net/ch-InstrumentalVariables.html)
+
+* [Imbens, G.W. & Angrist, J.D. (1994). Identification and estimation of local average treatment effects. *Econometrica, 62*(2). 467-475.](/resources/Identification_and_Estimation_of_Local_Average_Treatment_Effects.pdf)
+
+* [Getting started with estimatr](https://declaredesign.org/r/estimatr/articles/getting-started.html)
+
+* [Complier average treatment effects](https://evalsp21.classes.andrewheiss.com/example/cace/) - This is a nice introduction to using instrumental variables to estimate Complier Average Causal Effects (CACE; also referred to as Local Average Treatment Effect). CACE is often used in RCTs when their is a lack of compliance to the randomization assignment.
+
+* [Technical Methods Report: Estimation and Identification of the Complier Average Causal Effect Parameter in Education RCTs](https://ies.ed.gov/sites/default/files/migrated/nces_pubs/ncee/pdf/20094040.pdf)
+
 
 ## Assignments
 
 
 ## Supplemental Videos
+
+The Basics of Instrumental Variable (IV) Estimation in 15  
+{{< video https://www.youtube.com/watch?v=Sut88SzA39w >}}
+
+Instrumental Variables (ep 57) 
+{{< video https://www.youtube.com/watch?v=bfQgLnFdLSg&t=86s >}}
+
+Instrumental Variable Validity (ep 58)
+{{< video https://www.youtube.com/watch?v=HL8jR9CDlfA >}}
+
+Estimating Instrumental Variables (ep 59)
+{{< video https://www.youtube.com/watch?v=DjLXqFTvVWg >}}
+
+Testing Instrumental Variables Assumptions (ep 60)
+{{< video https://www.youtube.com/watch?v=B8MUeudCoWo >}}
+
+Defining LATE: The Local Average Treatment Effect: Causal Inference Bootcamp
+{{< video https://www.youtube.com/watch?v=ujTjUh3JVSs >}}
+
+Computing Late, Part 2: Finding Compliers: Causal Inference Bootcamp
+{{< video https://www.youtube.com/watch?v=ThFuqlqaWPY >}}
+
+Two Stage Least Squares (2SLS)
+{{< video https://www.youtube.com/watch?v=d3SLaxL6xYM >}}
 

@@ -1,23 +1,26 @@
 # List of packages to install. This can be CRAN or Github packages
 pkgs <- c(
-	'devtools', 
-	'tidyverse',
 	'causaldata',
-	'lavaan',
+	'devtools', 
+	'ForCausality',
 	'ggdag',
-	'rbounds', 
-	'tipr', 
+	'haven',
+	'intsvy,',
+	'lavaan',
 	'Matching', 
 	'MatchIt',
+	'rbounds', 
+	'tidyverse',
+	'tipr', 
 	'jbryer/psa',
 	'jbryer/VisualStats',
-	'NickCH-K/causaldata/R/',
-	'DoubleML/doubleml-for-r',
 	'jbryer/multilevelPSA',
 	'jbryer/PSAboot',
 	'jbryer/TriMatch',
 	'jbryer/VisualStats',
-	'jbryer/medley'
+	'jbryer/medley',
+	'DoubleML/doubleml-for-r',
+	'NickCH-K/causaldata/R/'
 )
 
 install.packages('pak')

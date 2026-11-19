@@ -4,9 +4,43 @@ title: "Propensity Score Analysis"
 
 ## Readings
 
+### Introduction 
+
+[Rosenbaum, P.R. & Rubin, D.B. (1983). The central role of the propensity score in observational
+studies for causal effects. *Biometrika 70*(1), 41-55.](resources/Rosenbaum-Rubin-Bka83.pdf)
+
+[Chapter 1 of *Applied Propensity Score Analysis with R*](https://psa.bryer.org/chapter-introduction.html)
+
+
+### Matching
+
+[Chapter 14 of *The Effect*](https://www.theeffectbook.net/ch-Matching.html)
+
+### Sensitivity Analysis
+
+[Chapter 14 The Power of a Sensitivity Analysis and Its Limit from *The Design of Observational Studies*](resources/Design_of_Observational_Studies Sensitivity_Analysis.pdf)
+
+We will use the [`rbounds`](https://github.com/gabrielfgm/rbounds/) and [`tipr`](https://github.com/r-causal/tipr) packages this week.
+
 
 ## Assignments
 
 
 ## Supplemental Videos
+
+{{< video https://www.youtube.com/watch?v=JLV4mtFhRMM >}}
+
+{{< video https://www.youtube.com/watch?v=nRfRswoZlqo >}}
+
+{{< video https://www.youtube.com/watch?v=bafdI39LcoE >}}
+
+{{< video https://www.youtube.com/watch?v=wMQTuRX3XmM >}}
+
+{{< video https://www.youtube.com/watch?v=1T3JYjhrNwE >}}
+
+{{< video https://www.youtube.com/watch?v=Pp-qs-mNEjI >}}
+
+{{< video https://www.youtube.com/watch?v=M6AsS4zaWQk >}}
+
+{{< video https://www.youtube.com/watch?v=OE_KzNJl75k >}}
 

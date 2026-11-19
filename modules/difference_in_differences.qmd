@@ -4,9 +4,24 @@ title: "Difference in Differences"
 
 ## Readings
 
+[Chapter 18 of *The Effect*](https://www.theeffectbook.net/ch-DifferenceinDifference.html)
+
 
 ## Assignments
 
 
 ## Supplemental Videos
 
+{{< video https://www.youtube.com/watch?v=8RQWEykGAjM >}}
+
+{{< video https://www.youtube.com/watch?v=ggYnrOGG97o >}}
+
+{{< video https://www.youtube.com/watch?v=NcHT8pl57HY >}}
+
+{{< video https://www.youtube.com/watch?v=95HxUdn-BJg >}}
+
+{{< video https://www.youtube.com/watch?v=ihIWuC6ULjo >}}
+
+{{< video https://www.youtube.com/watch?v=_nknBbw-HFQ >}}
+
+{{< video https://www.youtube.com/watch?v=hu2nDbnpALA >}}

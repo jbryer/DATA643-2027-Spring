@@ -4,9 +4,19 @@ title: "Introduction to Causality"
 
 ## Readings
 
+[Wang, L., Richardson, T.S., & Robins, J.M. (2026). Causal Inference A Tale of Three Frameworks. *Journal of Data Science 24*(1), 53-85](articles/Causal Inference A Tale of Three Frameworks.pdf)
+	
+[What Works Clearinghouse: Procedures and Standards Handbook Version 5](https://ies.ed.gov/ncee/WWC/Docs/referenceresources/Final_WWC-HandbookVer5_0-0-508.pdf) - Focus on chapter 3 for this week.
+
 
 ## Assignments
 
+Find a journal article that uses a randomized control trial as its primary research method. Critique the implementation using the What Works Clearinghouse standards.
+
 
 ## Supplemental Videos
+
+{{< video https://www.youtube.com/watch?v=eBij0BFc-RM >}}
+
+{{< video https://www.youtube.com/watch?v=MLCQdgNXusU >}}
 

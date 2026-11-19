@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://spring2027.data643.net/textbooks.html</loc>
-    <lastmod>2026-11-18T16:49:19.000Z</lastmod>
+    <lastmod>2026-11-18T17:55:56.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/software.html</loc>
-    <lastmod>2026-11-18T15:45:59.000Z</lastmod>
+    <lastmod>2026-11-18T17:50:26.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/project.html</loc>
@@ -14,15 +14,15 @@
   </url>
   <url>
     <loc>https://spring2027.data643.net/modules/structural_equation_modeling.html</loc>
-    <lastmod>2026-11-18T16:43:29.000Z</lastmod>
+    <lastmod>2026-11-19T23:36:11.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/modules/propensity_score_analysis.html</loc>
-    <lastmod>2026-11-18T16:43:09.000Z</lastmod>
+    <lastmod>2026-11-19T15:12:48.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/modules/instrumental_variables.html</loc>
-    <lastmod>2026-11-18T16:42:55.000Z</lastmod>
+    <lastmod>2026-11-18T20:36:11.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/modules/causal_machine_learning.html</loc>
@@ -34,7 +34,7 @@
   </url>
   <url>
     <loc>https://spring2027.data643.net/data.html</loc>
-    <lastmod>2026-11-18T17:08:50.000Z</lastmod>
+    <lastmod>2026-11-19T00:50:19.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/index.html</loc>
@@ -42,19 +42,19 @@
   </url>
   <url>
     <loc>https://spring2027.data643.net/modules/causal_diagrams.html</loc>
-    <lastmod>2026-11-18T16:42:31.000Z</lastmod>
+    <lastmod>2026-11-19T15:11:19.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/modules/difference_in_differences.html</loc>
-    <lastmod>2026-11-18T16:42:46.000Z</lastmod>
+    <lastmod>2026-11-19T23:27:15.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/modules/intro_to_causality.html</loc>
-    <lastmod>2026-11-17T20:46:09.000Z</lastmod>
+    <lastmod>2026-11-19T01:06:21.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/modules/regression_dicontinuity.html</loc>
-    <lastmod>2026-11-18T16:43:19.000Z</lastmod>
+    <lastmod>2026-11-19T23:28:13.000Z</lastmod>
   </url>
   <url>
     <loc>https://spring2027.data643.net/posts/00-Welcome.html</loc>
@@ -62,6 +62,6 @@
   </url>
   <url>
     <loc>https://spring2027.data643.net/schedule.html</loc>
-    <lastmod>2026-11-18T17:09:03.000Z</lastmod>
+    <lastmod>2026-11-19T23:39:29.000Z</lastmod>
   </url>
 </urlset>
